@@ -71,7 +71,6 @@
      - fire_bucket
      - upgrade_to_blast_furnace
      - repair_furnace
-     - downgrade_to_kiln
   blast_furnace:
     type: FCCUPGRADE
     name: Blast Furnace
@@ -109,7 +108,6 @@
      - make_green_glass3
      - make_clear_glass3
      - fire_terracotta3
-     - downgrade_to_furnace
      - fire_bricks3
      - fire_netherrack3
      - fire_red_netherrack3
@@ -118,4 +116,3 @@
      - cast_obsidian
      - fire_bucket
      - repair_blast_furnace
-     - downgrade_to_furnace

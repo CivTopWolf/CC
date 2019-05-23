@@ -41,7 +41,6 @@
      - int_xp_3
      - upgrade_to_advanced_cauldron
      - repair_intermediate_cauldron
-     - downgrade_to_basic_cauldron
   advanced_cauldron:
     type: FCCUPGRADE
     name: Advanced Experience Factory
@@ -51,4 +50,3 @@
      - adv_xp_1
      - nether_star
      - repair_advanced_cauldron
-     - downgrade_to_intermediate_cauldron

@@ -186,7 +186,6 @@ factories:
      - fire_bucket
      - upgrade_to_blast_furnace
      - repair_furnace
-     - downgrade_to_kiln
   blast_furnace:
     type: FCCUPGRADE
     name: Blast Furnace
@@ -224,7 +223,6 @@ factories:
      - make_green_glass3
      - make_clear_glass3
      - fire_terracotta3
-     - downgrade_to_furnace
      - fire_bricks3
      - fire_netherrack3
      - fire_red_netherrack3
@@ -233,7 +231,6 @@ factories:
      - cast_obsidian
      - fire_bucket
      - repair_blast_furnace
-     - downgrade_to_furnace
 ###################################
 
   bronze_armor:
@@ -340,7 +337,6 @@ factories:
      - int_xp_3
      - upgrade_to_advanced_cauldron
      - repair_intermediate_cauldron
-     - downgrade_to_basic_cauldron
   advanced_cauldron:
     type: FCCUPGRADE
     name: Advanced Experience Factory
@@ -350,7 +346,6 @@ factories:
      - adv_xp_1
      - nether_star
      - repair_advanced_cauldron
-     - downgrade_to_intermediate_cauldron
   charcoal_factory:
     type: FCC
     name: Charcoal Factory
@@ -1637,24 +1632,6 @@ recipes:
     health_gained: 10000
 
 
-  downgrade_to_kiln:
-    production_time: 4s
-    name: Downgrade to a Kiln
-    type: UPGRADE
-    input:
-      stick:
-        material: STICK
-        amount: 320
-    factory: Kiln
-  downgrade_to_furnace:
-    production_time: 4s
-    name: Downgrade to a Furnace
-    type: UPGRADE
-    input:
-      stick:
-        material: STICK
-        amount: 320
-    factory: Furnace
   sinter_red_sandstone:
     production_time: 4s
     name: Sinter Sand Into Red Sandstone
@@ -2702,24 +2679,6 @@ recipes:
         amount: 16
         durability: -1
     health_gained: 10000
-  downgrade_to_basic_cauldron:
-    production_time: 4s
-    name: Downgrade to a Basic Experience Factory
-    type: UPGRADE
-    input:
-      stick:
-        material: STICK
-        amount: 320
-    factory: Basic Experience Factory
-  downgrade_to_intermediate_cauldron:
-    production_time: 4s
-    name: Downgrade to an Intermediate Experience Factory
-    type: UPGRADE
-    input:
-      stick:
-        material: STICK
-        amount: 320
-    factory: Intermediate Experience Factory
   basic_xp_1:
     production_time: 4s
     name: Make Exp 1
