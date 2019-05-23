@@ -1,0 +1,8767 @@
+factories:
+  aesthetics:
+    type: FCC
+    name: Aesthetics Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      stone:
+        material: SANDSTONE
+        amount: 256
+      dandelionyellow:
+        material: INK_SACK
+        amount: 64
+        durability: 11
+      rosered:
+        material: INK_SACK
+        amount: 64
+        durability: 1
+    recipes:
+     - condense_purpur_fruit
+     - make_quartz
+     - make_cracked_stone_brick
+     - make_mossy_stone_brick
+     - make_circle_stone_brick
+     - make_mossy_cobble
+     - aggregate_andesite
+     - aggregate_diorite
+     - aggregate_granite
+     - make_red_sand
+     - clean_red_sand
+     - make_prismarine
+     - make_prismarine_bricks
+     - make_dark_prismarine
+     - make_sea_lantern
+     - make_redstone_lamp
+     - pack_ice
+     - repair_aesthetics
+  bio_lab:
+    type: FCC
+    name: Bio Lab
+    citadelBreakReduction: 1.0
+    setupcost:
+      sapling:
+        material: SAPLING
+        amount: 32
+        durability: -1
+      Dirt!:
+        material: DIRT
+        amount: 128
+    recipes:
+     - dirt_to_grass
+     - dirt_to_podzol
+     - dirt_to_mycelium
+     - sapling_to_oak
+     - sapling_to_spruce
+     - sapling_to_birch
+     - sapling_to_jungle
+     - sapling_to_acacia
+     - sapling_to_dark_oak
+     - make_mushroom_brown
+     - make_mushroom_red
+     - make_mushroom_stem
+     - make_mushroom_pores
+     - repair_bio_lab
+  bastion_factory:
+    type: FCC
+    name: Bastion Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      redstone:
+        material: REDSTONE_BLOCK
+        amount: 10
+      iron:
+        material: IRON_BLOCK
+        amount: 22
+      obby:
+        material: OBSIDIAN
+        amount: 64
+      gold:
+        material: GOLD_BLOCK
+        amount: 6
+      gunpowder:
+        material: SULPHUR
+        amount: 16
+      diamonds:
+        material: DIAMOND
+        amount: 8
+      lapis:
+        material: LAPIS_BLOCK
+        amount: 10
+      xp:
+        material: EMERALD_BLOCK
+        amount: 2
+      slime:
+        material: SLIME_BALL
+        amount: 4
+      pearls:
+        material: ENDER_PEARL
+        name: Exile Pearl
+        lore:
+          - Used to exile other players
+        amount: 4
+      stamina:
+        golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 2
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    recipes:
+     - make_bastion
+     - make_city_bastion
+     - make_claim_bastion
+     - repair_bastion
+
+  kiln:
+    type: FCC
+    name: Kiln
+    citadelBreakReduction: 1.0
+    decay_amount: 104
+    setupcost:
+      stone:
+        material: STONE
+        amount: 384
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    recipes:
+     - smelt_bronze
+     - sinter_stone
+     - sinter_sandstone
+     - sinter_red_sandstone
+     - make_green_glass
+     - fire_terracotta
+     - fire_bricks
+     - fire_netherrack
+     - fire_red_netherrack
+     - fire_bucket
+     - upgrade_to_furnace
+     - repair_kiln
+  furnace:
+    type: FCCUPGRADE
+    name: Furnace
+    citadelBreakReduction: 1.0
+    decay_amount: 104
+    setupcost:
+      bricks:
+        material: BRICK
+        amount: 384
+      netherbrick:
+        material: NETHER_BRICK
+        amount: 128
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 64
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 16
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    recipes:
+     - smelt_iron2
+     - sinter_stone2
+     - sinter_sandstone
+     - sinter_red_sandstone
+     - make_green_glass2
+     - make_clear_glass2
+     - fire_terracotta2
+     - fire_bricks2
+     - fire_netherrack2
+     - fire_red_netherrack2
+     - smelt_bronze2
+     - smelt_diamond2
+     - fire_bucket
+     - upgrade_to_blast_furnace
+     - repair_furnace
+     - downgrade_to_kiln
+  blast_furnace:
+    type: FCCUPGRADE
+    name: Blast Furnace
+    citadelBreakReduction: 1.0
+    decay_amount: 104
+    setupcost:
+      bricks:
+        material: BRICK
+        amount: 384
+      netherbrick:
+        material: NETHER_BRICK
+        amount: 128
+      diamonds:
+        material: DIAMOND
+        amount: 128
+      steel:
+        material: IRON_INGOT
+        amount: 16
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 24
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    recipes:
+     - smelt_diamond3
+     - sinter_stone3
+     - sinter_sandstone
+     - sinter_red_sandstone
+     - make_green_glass3
+     - make_clear_glass3
+     - fire_terracotta3
+     - downgrade_to_furnace
+     - fire_bricks3
+     - fire_netherrack3
+     - fire_red_netherrack3
+     - smelt_bronze3
+     - smelt_iron3
+     - cast_obsidian
+     - fire_bucket
+     - repair_blast_furnace
+     - downgrade_to_furnace
+###################################
+
+  bronze_armor:
+    type: FCC
+    name: Bronze Armor Smith
+    citadelBreakReduction: 1.0
+    setupcost:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 96
+    recipes:
+     - make_bronze_helm
+     - make_bronze_chest
+     - make_bronze_legs
+     - make_bronze_boots
+     - make_bronze_horse_armor
+     - make_bronze_armor_sets
+     - repair_bronze_armor_factory
+  bronze_tools:
+    type: FCC
+    name: Bronze Tool Smith
+    citadelBreakReduction: 1.0
+    setupcost:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 64
+    recipes:
+     - make_bronze_pick
+     - make_bronze_sword
+     - make_bronze_shovel
+     - make_bronze_axe
+     - make_bronze_hoe
+     - repair_bronze_tools_factory
+     
+     
+  carpentry:
+    type: FCC
+    name: Carpentry Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      chest:
+        material: WOOD
+        amount: 256
+        durability: -1
+    recipes:
+     - make_boat
+     - make_fences
+     - make_signs
+     - make_ladders
+     - make_bookshelves
+     - make_trapdoors
+     - make_wood_doors
+     - make_item_frames
+     - make_primitive bed
+     - make_crates
+     - make_sports_balls
+     - repair_carpentry
+  basic_cauldron:
+    type: FCC
+    name: Basic Experience Factory
+    citadelBreakReduction: 1.0
+    decay_amount: 104
+    setupcost:
+      cauldron:
+        material: CAULDRON_ITEM
+        amount: 1
+      iron:
+        material: IRON_INGOT
+        amount: 128
+      gold:
+        material: GOLD_BLOCK
+        amount: 4
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    recipes:
+     - basic_xp_1
+     - basic_xp_2
+     - basic_xp_3
+     - basic_xp_4
+     - basic_xp_5
+     - basic_xp_6
+     - upgrade_to_intermediate_cauldron
+     - repair_basic_cauldron
+  intermediate_cauldron:
+    type: FCCUPGRADE
+    name: Intermediate Experience Factory
+    citadelBreakReduction: 1.0
+    decay_amount: 104
+    recipes:
+     - int_xp_1
+     - int_xp_2
+     - int_xp_3
+     - upgrade_to_advanced_cauldron
+     - repair_intermediate_cauldron
+     - downgrade_to_basic_cauldron
+  advanced_cauldron:
+    type: FCCUPGRADE
+    name: Advanced Experience Factory
+    citadelBreakReduction: 1.0
+    decay_amount: 104
+    recipes:
+     - adv_xp_1
+     - nether_star
+     - repair_advanced_cauldron
+     - downgrade_to_intermediate_cauldron
+  charcoal_factory:
+    type: FCC
+    name: Charcoal Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      charcoal:
+        material: COAL
+        durability: 1
+        amount: 512
+    recipes:
+      - charcoal_from_planks
+      - charcoal_from_coal
+      - repair_charcoal_factory
+  chemistry_factory:
+    type: FCC
+    name: Chemistry Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      equipment:
+        material: BREWING_STAND_ITEM
+        amount: 8
+      glassware:
+        material: GLASS_BOTTLE
+        amount: 64
+      charcoal:
+        material: COAL
+        amount: 64
+        durability: 1
+      cauldrons:
+        material: CAULDRON_ITEM
+        amount: 4
+    recipes:
+     - potassium_nitrate
+     - craft_eyes_of_ender
+     - extract_mithril_strands
+     - magma_cream
+     - blaze_rods
+     - fermented_eye
+     - slime
+     - tanning
+     - repair_chemistry_factory
+  concrete_mixer:
+    type: FCC
+    name: Concrete Mixer
+    citadelBreakReduction: 1.0
+    setupcost:
+      sand:
+        material: SAND
+        amount: 256
+      gravel:
+        material: GRAVEL
+        amount: 256
+    recipes:
+     - mix_concrete_red
+     - mix_concrete_white
+     - mix_concrete_orange
+     - mix_concrete_magenta
+     - mix_concrete_light_blue
+     - mix_concrete_yellow
+     - mix_concrete_lime
+     - mix_concrete_pink
+     - mix_concrete_gray
+     - mix_concrete_light_gray
+     - mix_concrete_cyan
+     - mix_concrete_purple
+     - mix_concrete_blue
+     - mix_concrete_brown
+     - mix_concrete_green
+     - mix_concrete_black
+     - repair_mixer
+
+
+# old factories:
+  dirt_factory:
+    type: FCC
+    name: Main Menu
+    citadelBreakReduction: 1.0
+    setupcost:
+      dirt:
+        material: DIRT
+        amount: 1
+    recipes:
+     - upgrade_to_textile
+     - upgrade_to_aesthetics
+     - upgrade_to_bakery
+     - upgrade_to_grill
+     - upgrade_to_chemistry_factory
+     - upgrade_to_iron_armor_smith
+     - upgrade_to_iron_tool_smith
+     - upgrade_to_steel_armor_smith
+     - upgrade_to_steel_tool_smith
+     - upgrade_to_bronze_armor_smith
+     - upgrade_to_bronze_tool_smith
+     - upgrade_to_mithril_armor_factory
+     - upgrade_to_mithril_tool_factory
+     - upgrade_to_forge
+     - upgrade_to_wool_dye
+     - upgrade_to_glass_dye
+     - upgrade_to_clay_dye
+     - upgrade_to_bio_lab
+     - upgrade_to_carpentry
+     - upgrade_to_rails
+     - upgrade_to_redstone
+     - upgrade_to_bastion
+     - upgrade_to_basic_cauldron
+     - upgrade_to_compactor
+     - upgrade_to_printer
+     - upgrade_to_concrete
+     - upgrade_to_mill
+     - upgrade_to_kiln
+     - upgrade_to_music
+     - upgrade_to_charcoal_factory
+     - upgrade_to_explosives_factory
+  dye_wool:
+    type: FCC
+    name: Wool Dying Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      wool:
+        material: WOOL
+        amount: 32
+        durability: -1
+    recipes:
+     - dye_wool_orange
+     - dye_wool_white
+     - dye_wool_magenta
+     - dye_wool_light_blue
+     - dye_wool_yellow
+     - dye_wool_lime
+     - dye_wool_pink
+     - dye_wool_gray
+     - dye_wool_light_gray
+     - dye_wool_cyan
+     - dye_wool_purple
+     - dye_wool_blue
+     - dye_wool_brown
+     - dye_wool_green
+     - dye_wool_red
+     - dye_wool_black
+     - dye_carpets_orange
+     - dye_carpets_white
+     - dye_carpets_magenta
+     - dye_carpets_light_blue
+     - dye_carpets_yellow
+     - dye_carpets_lime
+     - dye_carpets_pink
+     - dye_carpets_gray
+     - dye_carpets_light_gray
+     - dye_carpets_cyan
+     - dye_carpets_purple
+     - dye_carpets_blue
+     - dye_carpets_brown
+     - dye_carpets_green
+     - dye_carpets_red
+     - dye_carpets_black
+     - repair_wool
+  dye_clay:
+    type: FCC
+    name: Clay Dying Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      clay:
+        material: HARD_CLAY
+        amount: 32
+        durability: -1
+    recipes:
+     - dye_clay_blue
+     - dye_clay_orange
+     - dye_clay_magenta
+     - dye_clay_light_blue
+     - dye_clay_yellow
+     - dye_clay_lime
+     - dye_clay_pink
+     - dye_clay_gray
+     - dye_clay_light_gray
+     - dye_clay_cyan
+     - dye_clay_purple
+     - dye_clay_white
+     - dye_clay_brown
+     - dye_clay_green
+     - dye_clay_red
+     - dye_clay_black
+     - repair_clay
+  dye_glass:
+    type: FCC
+    name: Glass Dying Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      glass:
+        material: GLASS
+        amount: 32
+    recipes:
+     - dye_glass_blue
+     - dye_glass_orange
+     - dye_glass_magenta
+     - dye_glass_light_blue
+     - dye_glass_yellow
+     - dye_glass_lime
+     - dye_glass_white
+     - dye_glass_gray
+     - dye_glass_light_gray
+     - dye_glass_cyan
+     - dye_glass_purple
+     - dye_glass_pink
+     - dye_glass_brown
+     - dye_glass_green
+     - dye_glass_red
+     - dye_glass_black
+     - repair_glass
+  explosives_factory:
+    type: FCC
+    name: Explosives Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      equipment:
+        material: CAULDRON_ITEM
+        amount: 8
+      glassware:
+        material: GLASS_BOTTLE
+        amount: 64
+      logs:
+        material: WOOD
+        durability: -1
+        amount: 512
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    recipes:
+      - make_tnt
+      - make_gunpowder
+      - make_fire_charges
+      - repair_explosives_factory
+  grill:
+    type: FCC
+    name: Grill
+    citadelBreakReduction: 1.0
+    setupcost:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+      stone:
+        material: STONE
+        amount: 128
+    recipes:
+     - cook_beef
+     - cook_pork
+     - cook_chicken
+     - cook_mutton
+     - cook_rabbit
+     - cook_fish
+     - cook_salmon
+     - repair_grill
+  bakery:
+    type: FCC
+    name: Bakery
+    citadelBreakReduction: 1.0
+    setupcost:
+      brick:
+        material: BRICK
+        amount: 16
+      log:
+        material: WOOD
+        durability: -1
+        amount: 48
+    recipes:
+     - bake_bread
+     - bake_potatoes
+     - bake_cookies
+     - bake_pie
+     - bake_cake
+     - repair_bakery
+  iron_tools:
+    type: FCC
+    name: Iron Tool Smith
+    citadelBreakReduction: 1.0
+    setupcost:
+      steel:
+        material: IRON_INGOT
+        amount: 64
+    recipes:
+     - make_iron_pick
+     - make_iron_sword
+     - make_iron_shovel
+     - make_iron_axe
+     - make_iron_hoe
+     - repair_iron_tools_factory
+  iron_armor:
+    type: FCC
+    name: Iron Armor Smith
+    citadelBreakReduction: 1.0
+    setupcost:
+      steel:
+        material: IRON_INGOT
+        amount: 96
+    recipes:
+     - make_mail_coifs
+     - make_mail_hauberks
+     - make_mail_leggings
+     - make_mail_boots
+     - make_iron_armor_sets
+     - repair_iron_armor_factory
+  redstone_mechanics:
+    type: FCC
+    name: Mechanics Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      iron:
+        material: IRON_INGOT
+        amount: 64
+      redstone:
+        material: REDSTONE
+        amount: 256
+      gold:
+        material: GOLD_BLOCK
+        amount: 4
+    recipes:
+     - make_pistons
+     - make_torch
+     - make_droppers
+     - make_dispensers
+     - make_observers
+     - make_noteblocks
+     - make_jukes
+     - make_sensors
+     - make_clocks
+     - make_compass
+     - make_comparator
+     - make_repeater
+     - repair_redstone
+  grinding_mill:
+    type: FCC
+    name: Grinding Mill
+    citadelBreakReduction: 1.0
+    setupcost:
+      leather:
+        material: LEATHER
+        amount: 32
+      stone:
+        material: STONE
+        amount: 128
+      log:
+        material: WOOD
+        durability: -1
+        amount: 512
+    recipes:
+     - crush_stone
+     - crush_cobble
+     - crush_gravel
+     - crush_lapis
+     - crush_redstone
+     - crush_gold_ore
+     - crush_glowstone
+     - grind_bones
+     - grind_roses
+     - grind_dandelions
+     - sift_gravel
+     - grind_sandstone
+     - grind_red_sandstone
+     - crush_coarse
+     - repair_grinding_mill
+  compactor:
+    type: FCC
+    name: Compactor
+    citadelBreakReduction: 0.8
+    setupcost:
+      iron_block:
+        material: IRON_BLOCK
+        amount: 32
+      redstone_block:
+        material: REDSTONE_BLOCK
+        amount: 16
+      piston:
+        material: PISTON_BASE
+        amount: 64
+      crate:
+        material: CHEST
+        amount: 32
+        lore:
+          - Crate
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 5
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    recipes:
+      - compact
+      - decompact
+      - repair_compactor
+  printing_press:
+    type: FCC
+    name: Printing Press
+    citadelBreakReduction: 0.1
+    setupcost:
+      ink:
+        material: INK_SACK
+        amount: 32
+      paper:
+        material: PAPER
+        amount: 64
+    recipes:
+      - bind_books
+      - bind_writable_books
+      - craft_printing_plate
+      - print_book
+      - print_note
+      - print_secure_note
+      - make_map
+      - make_painting
+      - repair_printer
+  rails:
+    type: FCC
+    name: Rail Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      iron:
+        material: IRON_INGOT
+        amount: 64
+      steel:
+        material: IRON_INGOT
+        amount: 8
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      redstone:
+        material: REDSTONE
+        amount: 32
+      gold:
+        material: GOLD_BLOCK
+        amount: 1
+    recipes:
+     - make_rail
+     - make_powered_rail
+     - make_detector_rail
+     - make_activator_rail
+     - make_minecart
+     - repair_rails
+  forge:
+    type: FCC
+    name: Forge
+    citadelBreakReduction: 1.0
+    setupcost:
+      iron:
+        material: IRON_INGOT
+        amount: 128
+      lava_bucket:
+        material: LAVA_BUCKET
+        amount: 1
+    recipes:
+     - make_anvil
+     - make_iron_fence
+     - make_bucket
+     - make_iron_trapdoor
+     - make_iron_door
+     - make_tripwire
+     - make_shears
+     - make_cauldrons
+     - make_hopper
+     - make_iron_pressure
+     - make_gold_pressure
+     - make_nametags
+     - refine_steel
+     - forge_iron_block
+     - forge_iron_ingot
+     - split_iron_blocks
+     - split_iron_ingots
+     - repair_forge
+  mithril_armor:
+    type: FCC
+    name: Mithril Armor Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 192
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+    recipes:
+     - make_mithril_helm
+     - make_mithril_chest
+     - make_mithril_legs
+     - make_mithril_boots
+     - make_mithril_horse_armor
+     - make_mithril_armor_sets
+     - repair_mithril_armor_factory
+  mithril_tool:
+    type: FCC
+    name: Mithril Tool Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 128
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+    recipes:
+     - make_mithril_pick
+     - make_mithril_sword
+     - make_mithril_shovel
+     - make_mithril_axe
+     - make_mithril_hoe
+     - repair_mithril_tool_factory
+  music:
+    type: FCC
+    name: Record Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      doxxer_tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - ":("
+    recipes:
+     - 13
+     - cat
+     - blocks
+     - chirp
+     - far
+     - mall
+     - mellohi
+     - stal
+     - strad
+     - ward
+     - 11
+     - wait
+  steel_tools:
+    type: FCC
+    name: Steel Tool Smith
+    citadelBreakReduction: 1.0
+    setupcost:
+      steel:
+        material: IRON_INGOT
+        amount: 64
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    recipes:
+     - make_steel_pick
+     - make_steel_sword
+     - make_steel_shovel
+     - make_steel_axe
+     - make_steel_hoe
+     - repair_steel_tools_factory
+  steel_armor:
+    type: FCC
+    name: Steel Armor Smith
+    citadelBreakReduction: 1.0
+    setupcost:
+      steel:
+        material: IRON_INGOT
+        amount: 96
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    recipes:
+     - make_steel_helm
+     - make_steel_chest
+     - make_steel_legs
+     - make_steel_boots
+     - make_steel_horse_armor
+     - make_steel_armor_sets
+     - repair_steel_armor_factory
+## Textile Factory
+
+  textile_factory:
+    type: FCC
+    name: Textile Factory
+    citadelBreakReduction: 1.0
+    setupcost:
+      leather:
+        material: LEATHER
+        amount: 64
+      wool:
+        material: WOOL
+        amount: 256
+    recipes:
+     - make_string
+     - make_wool
+     - make_carpet
+     - make_bed
+     - make_quilted_armor
+     - make_quilted_helmets
+     - make_quilted_leggings
+     - make_gambesons
+     - make_boots
+     - make_woven_cloth
+     - weave_mithril_sheet
+     - make_cobweb
+     - make_saddle
+     - make_lead
+     - repair_textile_factory
+recipes:
+  make_cracked_stone_brick:
+    production_time: 4s
+    name: Make Cracked Stone Brick
+    type: PRODUCTION
+    input:
+      stone_brick:
+        material: SMOOTH_BRICK
+        amount: 64
+    output:
+      cracked_stone_brick:
+        material: SMOOTH_BRICK
+        amount: 64
+        durability: 2
+  make_circle_stone_brick:
+    production_time: 4s
+    name: Make Chiseled Stone Brick
+    type: PRODUCTION
+    input:
+      stone_brick:
+        material: STONE
+        amount: 64
+    output:
+      circle_stone_brick:
+        material: SMOOTH_BRICK
+        amount: 64
+        durability: 3
+  make_mossy_stone_brick:
+    production_time: 4s
+    name: Make Mossy Stone Brick
+    type: PRODUCTION
+    input:
+      stone_brick:
+        material: SMOOTH_BRICK
+        amount: 64
+      vine:
+        material: VINE
+        amount: 8
+    output:
+      moss_stone_brick:
+        material: SMOOTH_BRICK
+        amount: 64
+        durability: 1
+  make_mossy_cobble:
+    production_time: 4s
+    name: Make Mossy Cobble
+    type: PRODUCTION
+    input:
+      cobblestone:
+        material: COBBLESTONE
+        amount: 64
+      vine:
+        material: VINE
+        amount: 8
+    output:
+      mossy_cobble:
+        material: MOSSY_COBBLESTONE
+        amount: 64
+  make_quartz:
+    production_time: 4s
+    name: Make Quartz
+    type: PRODUCTION
+    input:
+      stone:
+        material: SAND
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 15
+        amount: 8
+    output:
+      quartz:
+        material: QUARTZ_BLOCK
+        amount: 64
+  aggregate_andesite:
+    forceInclude: true
+    production_time: 4s
+    name: Aggregate Andesite
+    type: PRODUCTION
+    input:
+      cobblestone:
+        material: COBBLESTONE
+        amount: 64
+      diorite:
+        material: STONE
+        amount: 64
+        durability: 3
+    output:
+      andesite:
+        material: STONE
+        amount: 128
+        durability: 5
+  aggregate_diorite:
+    forceInclude: true
+    production_time: 4s
+    name: Aggregate Diorite
+    type: PRODUCTION
+    input:
+      cobblestone:
+        material: COBBLESTONE
+        amount: 64
+      quartz:
+        material: QUARTZ_BLOCK
+        amount: 64
+    output:
+      diorite:
+        material: STONE
+        amount: 128
+        durability: 3
+  aggregate_granite:
+    forceInclude: true
+    production_time: 4s
+    name: Aggregate Granite
+    type: PRODUCTION
+    input:
+      diorite:
+        material: STONE
+        amount: 96
+        durability: 3
+      cobble:
+        material: COBBLESTONE
+        amount: 64
+      quartz:
+        material: SAND
+        durability: 1
+        amount: 32
+    output:
+      granite:
+        material: STONE
+        amount: 128
+        durability: 1
+  make_red_sand:
+    production_time: 4s
+    name: Make Red SAND
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 48
+      flesh:
+        material: STONE
+        amount: 16
+        durability: 1
+    output:
+      red_sand:
+        material: SAND
+        amount: 64
+        durability: 1
+  clean_red_sand:
+    forceInclude: true
+    production_time: 4s
+    name: Clean Red SAND
+    type: PRODUCTION
+    input:
+      red_sand:
+        material: SAND
+        amount: 64
+        durability: 1
+      water:
+        material: WATER_BUCKET
+        amount: 1
+    output:
+      sand:
+        material: SAND
+        amount: 48
+      granite:
+        material: STONE
+        amount: 16
+        durability: 1
+      bucket:
+        material: BUCKET
+        amount: 1
+  condense_purpur_fruit:
+    forceInclude: true
+    production_time: 4s
+    name: Make Purpur from Fruit
+    type: PRODUCTION
+    input:
+      fruit:
+        material: CHORUS_FRUIT_POPPED
+        amount: 64
+    output:
+      purpur:
+        material: PURPUR_BLOCK
+        amount: 64
+  make_prismarine:
+    production_time: 4s
+    name: Make Prismarine
+    type: PRODUCTION
+    input:
+      stone:
+        material: STONE
+        amount: 64
+      lapis:
+        material: INK_SACK
+        durability: 4
+        amount: 16
+    output:
+      prismarine:
+        material: PRISMARINE
+        amount: 64
+  make_prismarine_bricks:
+    production_time: 4s
+    name: Make Prismarine Bricks
+    type: PRODUCTION
+    input:
+      stone_brick:
+        material: SMOOTH_BRICK
+        amount: 64
+      lapis:
+        material: INK_SACK
+        durability: 4
+        amount: 16
+    output:
+      prismarine_bricks:
+        material: PRISMARINE
+        durability: 1
+        amount: 64
+  make_dark_prismarine:
+    production_time: 4s
+    name: Make Dark Prismarine
+    type: PRODUCTION
+    input:
+      stone:
+        material: STONE
+        amount: 64
+      lapis:
+        material: INK_SACK
+        durability: 4
+        amount: 16
+      ink:
+        material: INK_SACK
+        amount: 4
+    output:
+      dark_prismarine:
+        material: PRISMARINE
+        durability: 2
+        amount: 64
+  make_sea_lantern:
+    production_time: 4s
+    name: Make Sea Lantern
+    type: PRODUCTION
+    input:
+      glowstone:
+        material: GLOWSTONE
+        amount: 32
+      lapis:
+        material: INK_SACK
+        durability: 4
+        amount: 8
+    output:
+      sea_lantern:
+        material: SEA_LANTERN
+        amount: 32
+  make_redstone_lamp:
+    forceInclude: true
+    production_time: 4s
+    name: Make Redstone Lamp
+    type: PRODUCTION
+    input:
+      glowstone:
+        material: GLOWSTONE
+        amount: 32
+      redstone:
+        material: REDSTONE
+        amount: 16
+    output:
+      redstone_lamp:
+        material: REDSTONE_LAMP_OFF
+        amount: 32
+  dirt_to_grass:
+    production_time: 4s
+    name: Convert Dirt to Grass
+    type: PRODUCTION
+    input:
+      dirt:
+        material: DIRT
+        amount: 64
+    output:
+      grass:
+        material: GRASS
+        amount: 64
+  dirt_to_podzol:
+    production_time: 4s
+    name: Convert Dirt to Podzol
+    type: PRODUCTION
+    input:
+      dirt:
+        material: DIRT
+        amount: 64
+    output:
+      podzol:
+        material: DIRT
+        amount: 64
+        durability: 2
+  dirt_to_mycelium:
+    production_time: 4s
+    name: Convert Dirt to Mycelium
+    type: PRODUCTION
+    input:
+      dirt:
+        material: DIRT
+        amount: 64
+    output:
+      mycelium:
+        material: MYCEL
+        amount: 64
+  sapling_to_oak:
+    production_time: 4s
+    name: Convert Sapling to Oak
+    type: PRODUCTION
+    input:
+      sapling:
+        material: SAPLING
+        amount: 32
+        durability: -1
+    output:
+      oak_sapling:
+        material: SAPLING
+        amount: 32
+  sapling_to_spruce:
+    production_time: 4s
+    name: Convert Sapling to Spruce
+    type: PRODUCTION
+    input:
+      sapling:
+        material: SAPLING
+        amount: 32
+        durability: -1
+    output:
+      spruce_sapling:
+        material: SAPLING
+        amount: 32
+        durability: 1
+  sapling_to_birch:
+    production_time: 4s
+    name: Convert Sapling to Birch
+    type: PRODUCTION
+    input:
+      sapling:
+        material: SAPLING
+        amount: 32
+        durability: -1
+    output:
+      birch_sapling:
+        material: SAPLING
+        amount: 32
+        durability: 2
+  sapling_to_jungle:
+    production_time: 4s
+    name: Convert Sapling to Jungle
+    type: PRODUCTION
+    input:
+      sapling:
+        material: SAPLING
+        amount: 32
+        durability: -1
+    output:
+      jungle_sapling:
+        material: SAPLING
+        amount: 32
+        durability: 3
+  sapling_to_acacia:
+    production_time: 4s
+    name: Convert Sapling to Acacia
+    type: PRODUCTION
+    input:
+      sapling:
+        material: SAPLING
+        amount: 32
+        durability: -1
+    output:
+      acacia_sapling:
+        material: SAPLING
+        amount: 32
+        durability: 4
+  sapling_to_dark_oak:
+    production_time: 4s
+    name: Convert Sapling to Dark Oak
+    type: PRODUCTION
+    input:
+      sapling:
+        material: SAPLING
+        amount: 32
+        durability: -1
+    output:
+      dark_oak_sapling:
+        material: SAPLING
+        amount: 32
+        durability: 5
+  make_mushroom_brown:
+    type: PRODUCTION
+    name: Make Brown Mushroom Blocks
+    production_time: 4s
+    input:
+      brown_mushroom:
+        material: BROWN_MUSHROOM
+        amount: 64
+    output:
+      brown_mushroom_block:
+        material: HUGE_MUSHROOM_1
+        durability: 14
+        amount: 16
+  make_mushroom_red:
+    type: PRODUCTION
+    name: Make Red Mushroom Blocks
+    production_time: 4s
+    input:
+      red_mushroom:
+        material: RED_MUSHROOM
+        amount: 64
+    output:
+      red_mushroom_block:
+        material: HUGE_MUSHROOM_2
+        durability: 14
+        amount: 16
+  make_mushroom_stem:
+    type: PRODUCTION
+    name: Make Stem Mushroom Blocks
+    production_time: 4s
+    input:
+      brown_mushroom:
+        material: BROWN_MUSHROOM
+        amount: 64
+    output:
+      stem_mushroom_block:
+        material: HUGE_MUSHROOM_1
+        durability: 10
+        amount: 16
+  make_mushroom_pores:
+    type: PRODUCTION
+    name: Make Pore Mushroom Blocks
+    production_time: 4s
+    input:
+      brown_mushroom:
+        material: BROWN_MUSHROOM
+        amount: 64
+    output:
+      pore_mushroom_block:
+        material: HUGE_MUSHROOM_1
+        amount: 16
+  pack_ice:
+    forceInclude: true
+    type: PRODUCTION
+    name: Pack Ice
+    production_time: 4s
+    input:
+      ice:
+        material: ICE
+        amount: 512
+    output:
+      packed_ice:
+        material: PACKED_ICE
+        amount: 256
+  repair_aesthetics:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      stone:
+        material: SANDSTONE
+        amount: 32
+    health_gained: 10000
+  repair_bio_lab:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      Dirt:
+        material: DIRT
+        amount: 16
+    health_gained: 10000
+  make_bastion:
+    production_time: 4s
+    name: Make Vault Bastions
+    type: PRODUCTION
+    input:
+      redstone:
+        material: REDSTONE_BLOCK
+        amount: 40
+      iron:
+        material: IRON_BLOCK
+        amount: 90
+      obby:
+        material: OBSIDIAN
+        amount: 256
+      gold:
+        material: GOLD_BLOCK
+        amount: 24
+      gunpowder:
+        material: SULPHUR
+        amount: 64
+      diamonds:
+        material: DIAMOND
+        amount: 32
+      lapis:
+        material: LAPIS_BLOCK
+        amount: 40
+      xp:
+        material: EMERALD_BLOCK
+        amount: 10
+      slime:
+        material: SLIME_BALL
+        amount: 16
+      pearls:
+        material: ENDER_PEARL
+        name: Exile Pearl
+        lore:
+          - Used to exile other players
+          - Do not move pearls between worlds.
+        amount: 16
+      stamina:
+        golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      bastion:
+        material: ENDER_CHEST
+        name: Vault Bastion
+        lore: 
+          - Vault Bastions prevent block placement
+        amount: 16
+  make_city_bastion:
+    production_time: 4s
+    name: Make City Bastions
+    type: PRODUCTION
+    input:
+      redstone:
+        material: REDSTONE_BLOCK
+        amount: 10
+      iron:
+        material: IRON_BLOCK
+        amount: 22
+      obby:
+        material: OBSIDIAN
+        amount: 64
+      gold:
+        material: GOLD_BLOCK
+        amount: 6
+      gunpowder:
+        material: SULPHUR
+        amount: 16
+      diamonds:
+        material: DIAMOND
+        amount: 8
+      lapis:
+        material: LAPIS_BLOCK
+        amount: 10
+      xp:
+        material: EMERALD_BLOCK
+        amount: 2
+      slime:
+        material: SLIME_BALL
+        amount: 4
+      pearls:
+        material: ENDER_PEARL
+        name: Exile Pearl
+        lore:
+          - Used to exile other players
+          - Do not move pearls between worlds.
+        amount: 4
+      stamina:
+        golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 2
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      bastion:
+        material: ENDER_CHEST
+        name: City Bastion 
+        lore: 
+          - City Bastions will keep exiled players out and prevent block reinforcements
+        amount: 16
+  make_claim_bastion:
+    production_time: 4s
+    name: Make Claim Bastions
+    type: PRODUCTION
+    input:
+      redstone:
+        material: REDSTONE_BLOCK
+        amount: 5
+      iron:
+        material: IRON_BLOCK
+        amount: 11
+      obby:
+        material: OBSIDIAN
+        amount: 32
+      gold:
+        material: GOLD_BLOCK
+        amount: 3
+      gunpowder:
+        material: SULPHUR
+        amount: 8
+      diamonds:
+        material: DIAMOND
+        amount: 4
+      lapis:
+        material: LAPIS_BLOCK
+        amount: 5
+      xp:
+        material: EMERALD_BLOCK
+        amount: 1
+      slime:
+        material: SLIME_BALL
+        amount: 2
+      pearls:
+        material: ENDER_PEARL
+        name: Exile Pearl
+        lore:
+          - Used to exile other players
+          - Do not move pearls between worlds.
+        amount: 2
+      stamina:
+        golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 1
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      bastion:
+        material: ENDER_CHEST
+        name: Claim Bastion 
+        lore: 
+          - Claim Bastions will keep exiled players out and prevent block reinforcements in a small area
+        amount: 160
+  repair_bastion:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      redstone:
+        material: REDSTONE_BLOCK
+        amount: 16
+      iron:
+        material: IRON_BLOCK
+        amount: 22
+      obby:
+        material: OBSIDIAN
+        amount: 64
+      gold:
+        material: GOLD_BLOCK
+        amount: 8
+      gunpowder:
+        material: SULPHUR
+        amount: 16
+      diamonds:
+        material: DIAMOND
+        amount: 8
+      xp:
+        material: EMERALD_BLOCK
+        amount: 2
+      slime:
+        material: SLIME_BALL
+        amount: 4
+      pearls:
+        material: ENDER_PEARL
+        name: Exile Pearl
+        lore:
+          - Used to exile other players
+          - Do not move pearls between worlds.
+        amount: 4
+      stamina:
+        golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 2
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    health_gained: 10000
+
+
+  downgrade_to_kiln:
+    production_time: 4s
+    name: Downgrade to a Kiln
+    type: UPGRADE
+    input:
+      stick:
+        material: STICK
+        amount: 320
+    factory: Kiln
+  downgrade_to_furnace:
+    production_time: 4s
+    name: Downgrade to a Furnace
+    type: UPGRADE
+    input:
+      stick:
+        material: STICK
+        amount: 320
+    factory: Furnace
+  sinter_red_sandstone:
+    production_time: 4s
+    name: Sinter Sand Into Red Sandstone
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        durability: 1
+        amount: 64
+    output:
+      sandstone:
+        material: RED_SANDSTONE
+        amount: 64
+  fire_netherrack:
+    production_time: 4s
+    name: Fire Netherbricks
+    type: PRODUCTION
+    input:
+      netherrack:
+        material: NETHERRACK
+        amount: 64
+    output:
+      brick:
+        material: NETHER_BRICK
+        amount: 16
+  fire_netherrack2:
+    production_time: 4s
+    name: Fire Netherbricks
+    type: PRODUCTION
+    input:
+      netherrack:
+        material: NETHERRACK
+        amount: 64
+    output:
+      brick:
+        material: NETHER_BRICK
+        amount: 24
+  fire_netherrack3:
+    production_time: 4s
+    name: Fire Netherbricks
+    type: PRODUCTION
+    input:
+      netherrack:
+        material: NETHERRACK
+        amount: 64
+    output:
+      brick:
+        material: NETHER_BRICK
+        amount: 32
+  sinter_stone:
+    production_time: 4s
+    name: Sinter Cobble Into Stone
+    type: PRODUCTION
+    input:
+      cobble:
+        material: COBBLESTONE
+        amount: 64
+    output:
+      stone:
+        material: STONE
+        amount: 64
+  sinter_sandstone:
+    production_time: 4s
+    name: Sinter Sand Into Sandstone
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 64
+    output:
+      sandstone:
+        material: SANDSTONE
+        amount: 64
+  make_green_glass:
+    production_time: 4s
+    name: Make Green Glass
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 64
+    output:
+      glass:
+        material: STAINED_GLASS
+        amount: 64
+        durability: 13
+  fire_terracotta:
+    production_time: 4s
+    name: Fire Terracotta Blocks
+    type: PRODUCTION
+    input:
+      clay:
+        material: CLAY
+        amount: 64
+    output:
+      terracotta:
+        material: HARD_CLAY
+        amount: 64
+  fire_bricks:
+    production_time: 4s
+    name: Fire Bricks
+    type: PRODUCTION
+    input:
+      clay:
+        material: CLAY
+        amount: 64
+    output:
+      brick:
+        material: BRICK
+        amount: 64
+  fire_red_netherrack:
+    production_time: 4s
+    name: Fire Red Netherrack Bricks
+    type: PRODUCTION
+    input:
+      netherrack:
+        material: NETHERRACK
+        amount: 64
+      warts:
+        material: NETHER_STALK
+        amount: 16
+    output:
+      brick:
+        material: RED_NETHER_BRICK
+        amount: 2
+  fire_terracotta2:
+    production_time: 4s
+    name: Fire Terracotta Blocks
+    type: PRODUCTION
+    input:
+      clay:
+        material: CLAY
+        amount: 64
+    output:
+      terracotta:
+        material: HARD_CLAY
+        amount: 96
+  fire_bricks2:
+    production_time: 4s
+    name: Fire Bricks
+    type: PRODUCTION
+    input:
+      clay:
+        material: CLAY
+        amount: 64
+    output:
+      brick:
+        material: BRICK
+        amount: 96
+  fire_red_netherrack2:
+    production_time: 4s
+    name: Fire Red Netherrack Bricks
+    type: PRODUCTION
+    input:
+      netherrack:
+        material: NETHERRACK
+        amount: 64
+      warts:
+        material: NETHER_STALK
+        amount: 16
+    output:
+      brick:
+        material: RED_NETHER_BRICK
+        amount: 4
+  sinter_stone2:
+    production_time: 4s
+    name: Sinter Cobble Into Stone
+    type: PRODUCTION
+    input:
+      cobble:
+        material: COBBLESTONE
+        amount: 64
+    output:
+      stone:
+        material: STONE
+        amount: 80
+  make_green_glass2:
+    production_time: 4s
+    name: Make Green Glass
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 64
+    output:
+      glass:
+        material: STAINED_GLASS
+        amount: 96
+        durability: 13
+  make_clear_glass2:
+    production_time: 16s
+    name: Make Clear Glass
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 64
+      white_dye:
+        material: INK_SACK
+        durability: 15
+        amount: 16
+      mineral:
+        material: FLINT
+        amount: 8
+    output:
+      glass:
+        material: GLASS
+        amount: 64
+  sinter_stone3:
+    production_time: 4s
+    name: Sinter Cobble Into Stone
+    type: PRODUCTION
+    input:
+      cobble:
+        material: COBBLESTONE
+        amount: 64
+    output:
+      stone:
+        material: STONE
+        amount: 96
+  make_green_glass3:
+    production_time: 4s
+    name: Make Green Glass
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 64
+    output:
+      glass:
+        material: STAINED_GLASS
+        amount: 128
+        durability: 13
+  make_clear_glass3:
+    production_time: 16s
+    name: Make Clear Glass
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 64
+      white_dye:
+        material: INK_SACK
+        durability: 15
+        amount: 16
+      mineral:
+        material: FLINT
+        amount: 8
+    output:
+      glass:
+        material: GLASS
+        amount: 96
+  fire_terracotta3:
+    production_time: 4s
+    name: Fire Terracotta Blocks
+    type: PRODUCTION
+    input:
+      clay:
+        material: CLAY
+        amount: 64
+    output:
+      terracotta:
+        material: HARD_CLAY
+        amount: 128
+  fire_bricks3:
+    production_time: 4s
+    name: Fire Bricks
+    type: PRODUCTION
+    input:
+      clay:
+        material: CLAY
+        amount: 64
+    output:
+      brick:
+        material: BRICK
+        amount: 128
+  fire_red_netherrack3:
+    production_time: 4s
+    name: Fire Red Netherrack Bricks
+    type: PRODUCTION
+    input:
+      netherrack:
+        material: NETHERRACK
+        amount: 64
+      warts:
+        material: NETHER_STALK
+        amount: 16
+    output:
+      brick:
+        material: RED_NETHER_BRICK
+        amount: 6
+  smelt_bronze:
+    production_time: 4s
+    name: Smelt Bronze
+    type: PRODUCTION
+    input:
+      tin_ore:
+        material: COAL_ORE
+        name: "Tin Ore"
+        lore:
+          - "Combine with copper ore to make bronze"
+        amount: 16
+      copper_ore:
+        material: EMERALD_ORE
+        name: "Copper Ore"
+        lore:
+          - "Combine with tin ore to make bronze"
+        amount: 48
+    output:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 48
+  smelt_bronze2:
+    production_time: 4s
+    name: Smelt Bronze
+    type: PRODUCTION
+    input:
+      tin_ore:
+        material: COAL_ORE
+        name: "Tin Ore"
+        lore:
+          - "Combine with copper ore to make bronze"
+        amount: 16
+      copper_ore:
+        material: EMERALD_ORE
+        name: "Copper Ore"
+        lore:
+          - "Combine with tin ore to make bronze"
+        amount: 48
+    output:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 64
+  smelt_bronze3:
+    production_time: 4s
+    name: Smelt Bronze
+    type: PRODUCTION
+    input:
+      tin_ore:
+        material: COAL_ORE
+        name: "Tin Ore"
+        lore:
+          - "Combine with copper ore to make bronze"
+        amount: 16
+      copper_ore:
+        material: EMERALD_ORE
+        name: "Copper Ore"
+        lore:
+          - "Combine with tin ore to make bronze"
+        amount: 48
+    output:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 80
+  smelt_iron2:
+    production_time: 4s
+    name: Smelt Iron
+    type: PRODUCTION
+    input:
+      iron ore:
+        material: IRON_ORE
+        amount: 48
+    output:
+      iron:
+        material: IRON_INGOT
+        amount: 64
+  smelt_iron3:
+    production_time: 4s
+    name: Smelt Iron
+    type: PRODUCTION
+    input:
+      iron ore:
+        material: IRON_ORE
+        amount: 48
+    output:
+      iron:
+        material: IRON_INGOT
+        amount: 80
+  smelt_diamond2:
+    production_time: 4s
+    name: Smelt Diamond
+    type: PRODUCTION
+    input:
+      diamond_ore:
+        material: DIAMOND_ORE
+        amount: 16
+    output:
+      diamond:
+        material: DIAMOND
+        amount: 16
+  smelt_diamond3:
+    production_time: 4s
+    name: Smelt Diamond
+    type: PRODUCTION
+    input:
+      diamond_ore:
+        material: DIAMOND_ORE
+        amount: 16
+    output:
+      diamond:
+        material: DIAMOND
+        amount: 32
+  cast_obsidian:
+    production_time: 32s
+    fuel_consumption_intervall: 1s
+    name: Cast Obsidian
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 64
+      water:
+        material: WATER_BUCKET
+        amount: 2
+    output:
+      obsidian:
+        material: OBSIDIAN
+        amount: 64
+      bucket:
+        material: BUCKET
+        amount: 2
+  fire_bucket:
+    production_time: 4s
+    name: Fire Glazed, Ceramic Buckets
+    type: PRODUCTION
+    input:
+      clay:
+        material: CLAY
+        amount: 18
+      bonemeal:
+        material: INK_SACK
+        amount: 6
+        durability: 15
+    output:
+      bucket:
+        material: BUCKET
+        amount: 6
+  repair_kiln:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      terracotta:
+        material: STONE
+        amount: 64
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    health_gained: 10000
+  repair_furnace:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      netherbrick:
+        material: NETHER_BRICK
+        amount: 32
+      brick:
+        material: BRICK
+        amount: 64
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 16
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    health_gained: 10000
+  repair_blast_furnace:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      netherbrick:
+        material: NETHER_BRICK
+        amount: 32
+      brick:
+        material: BRICK
+        amount: 64
+      diamond:
+        material: DIAMOND
+        amount: 2
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 24
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    health_gained: 10000
+#####################################################################  
+  make_bronze_horse_armor:
+    production_time: 4s
+    name: Make Bronze Horse Armor
+    type: PRODUCTION
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 24
+      sand:
+        material: SAND
+        amount: 32
+      wool:
+        material: WOOL
+        amount: 32
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      mithril_horse:
+        material: GOLD_BARDING
+        amount: 1
+        name: Bronze Horse Armor
+        lore:
+          - Made of cast and hammered bronze
+  make_bronze_armor_sets:
+    production_time: 4s
+    name: Make Bronze Armor Sets
+    type: PRODUCTION
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 48
+      sand:
+        material: SAND
+        amount: 32
+      qcap:
+        material: LEATHER_HELMET
+        name: "Quilted Cap"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 2
+      gambeson:
+        material: LEATHER_CHESTPLATE
+        name: "Gambeson"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 2
+      qpants:
+        material: LEATHER_LEGGINGS
+        name: "Quilted Trousers"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 2
+      boots:
+        material: LEATHER_BOOTS
+        amount: 2
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      bronze_helm:
+        material: GOLD_HELMET
+        name: "Bronze Helmet"
+        lore:
+          - Made of cast and hammered bronze
+          - "No Owner"
+        amount: 2
+      bronze_chest:
+        material: GOLD_CHESTPLATE
+        name: "Bronze Chestplate"
+        lore:
+          - Made of cast and hammered bronze
+          - "No Owner"
+        amount: 2
+      bronze_legs:
+        material: GOLD_LEGGINGS
+        name: "Bronze Leggings"
+        lore:
+          - Made of cast and hammered bronze
+          - "No Owner"
+        amount: 2
+      bronze_boots:
+        material: GOLD_BOOTS
+        name: "Bronze Boots"
+        lore:
+          - Made of cast and hammered bronze
+          - "No Owner"
+        amount: 2
+  make_bronze_helm:
+    production_time: 4s
+    name: Make Bronze Helmets
+    type: PRODUCTION
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 48
+      sand:
+        material: SAND
+        amount: 32
+      qcap:
+        material: LEATHER_HELMET
+        name: "Quilted Cap"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      bronze_helm:
+        material: GOLD_HELMET
+        name: "Bronze Helmet"
+        lore:
+          - Made of cast and hammered bronze
+          - "No Owner"
+        amount: 8
+  make_bronze_chest:
+    production_time: 4s
+    name: Make Bronze Chestplates
+    type: PRODUCTION
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 48
+      sand:
+        material: SAND
+        amount: 3
+      gambeson:
+        material: LEATHER_CHESTPLATE
+        name: "Gambeson"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      bronze_chest:
+        material: GOLD_CHESTPLATE
+        name: "Bronze Chestplate"
+        lore:
+          - Made of cast and hammered bronze
+          - "No Owner"
+        amount: 8
+  make_bronze_legs:
+    production_time: 4s
+    name: Make Bronze Leggings
+    type: PRODUCTION
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 48
+      sand:
+        material: SAND
+        amount: 32
+      qpants:
+        material: LEATHER_LEGGINGS
+        name: "Quilted Trousers"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      bronze_legs:
+        material: GOLD_LEGGINGS
+        name: "Bronze Leggings"
+        lore:
+          - Made of cast and hammered bronze
+          - "No Owner"
+        amount: 8
+  make_bronze_boots:
+    production_time: 4s
+    name: Make Bronze Boots
+    type: PRODUCTION
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 48
+      sand:
+        material: SAND
+        amount: 32
+      boots:
+        material: LEATHER_BOOTS
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      bronze_boots:
+        material: GOLD_BOOTS
+        name: "Bronze Boots"
+        lore:
+          - Made of cast and hammered bronze
+          - "No Owner"
+        amount: 8
+  repair_bronze_armor_factory:
+    production_time: 4s
+    name: Repair Bronze Armor Factory
+    type: REPAIR
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 6
+      sand:
+        material: SAND
+        amount: 32
+    health_gained: 10000
+  make_bronze_axe:
+    production_time: 4s
+    name: Make Bronze Axe
+    type: PRODUCTION
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 16
+      sand:
+        material: SAND
+        amount: 32
+    output:
+      bronze_axe:
+        material: GOLD_AXE
+        name: "Bronze Axe"
+        lore:
+          - Made of cast and hammered bronze
+        amount: 16
+  make_bronze_sword:
+    production_time: 4s
+    name: Make Bronze Sword
+    type: PRODUCTION
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 16
+      sand:
+        material: SAND
+        amount: 32
+    output:
+      bronze_sword:
+        material: GOLD_SWORD
+        name: "Bronze Sword"
+        lore:
+          - Made of cast and hammered bronze
+        amount: 16
+  make_bronze_pick:
+    production_time: 4s
+    name: Make Bronze Pick
+    type: PRODUCTION
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 16
+      sand:
+        material: SAND
+        amount: 32
+    output:
+      bronze_pick:
+        material: GOLD_PICKAXE
+        name: "Bronze Pickaxe"
+        lore:
+          - Made of cast and hammered bronze
+          - Mining Mode (/chisel to toggle)
+        amount: 16
+  make_bronze_hoe:
+    production_time: 4s
+    name: Make Bronze Hoe
+    type: PRODUCTION
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 16
+      sand:
+        material: SAND
+        amount: 32
+    output:
+      bronze_hoe:
+        material: GOLD_HOE
+        name: "Bronze Hoe"
+        lore:
+          - Made of cast and hammered bronze
+        amount: 16
+  make_bronze_shovel:
+    production_time: 4s
+    name: Make Bronze Shovel
+    type: PRODUCTION
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 16
+      sand:
+        material: SAND
+        amount: 32
+    output:
+      bronze_shovel:
+        material: GOLD_SPADE
+        name: "Bronze Shovel"
+        lore:
+          - Made of cast and hammered bronze
+        amount: 16
+  repair_bronze_tools_factory:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 1
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    health_gained: 10000
+  make_item_frames:
+    production_time: 4s
+    name: Make Item Frames
+    type: PRODUCTION
+    input:
+      cloth:
+        material: PAPER
+        amount: 4
+        name: Woven Cloth
+        lore:
+          - "Suitable for use as sailcloth"
+      sticks:
+        material: STICK
+        amount: 16
+    output:
+      crate:
+        material: ITEM_FRAME
+        amount: 4
+  make_crates:
+    production_time: 4s
+    name: Make Crates
+    type: PRODUCTION
+    input:
+      chest: 
+        material: CHEST
+        amount: 128
+      iron:
+        material: IRON_INGOT
+        amount: 3
+    output:
+      crate:
+        material: CHEST
+        amount: 128
+        lore:
+          - Crate
+  make_fences:
+    production_time: 4s
+    name: Make Fences
+    type: PRODUCTION
+    input:
+      chest:
+        material: WOOD
+        amount: 92
+        durability: -1
+    output:
+      fence:
+        material: FENCE
+        amount: 256
+  make_signs:
+    production_time: 4s
+    name: Make Signs
+    type: PRODUCTION
+    input:
+      chest:
+        material: WOOD
+        amount: 64
+        durability: -1
+    output:
+      sign:
+        material: SIGN
+        amount: 64
+  make_ladders:
+    production_time: 4s
+    name: Make Ladders
+    type: PRODUCTION
+    input:
+      chest:
+        material: WOOD
+        amount: 64
+        durability: -1
+    output:
+      ladder:
+        material: LADDER
+        amount: 256
+  make_bookshelves:
+    production_time: 4s
+    name: Make Bookshelves
+    type: PRODUCTION
+    input:
+      chest:
+        material: WOOD
+        amount: 128
+        durability: -1
+      books:
+        material: BOOK
+        amount: 48
+    output:
+      bookshelves:
+        material: BOOKSHELF
+        amount: 16
+  make_trapdoors:
+    production_time: 4s
+    name: Make Trap Doors
+    type: PRODUCTION
+    input:
+      chest:
+        material: WOOD
+        amount: 384
+        durability: -1
+    output:
+      trapdoor:
+        material: TRAP_DOOR
+        amount: 256
+  make_wood_doors:
+    production_time: 4s
+    name: Make Wood Doors
+    type: PRODUCTION
+    input:
+      chest:
+        material: WOOD
+        amount: 128
+        durability: -1
+    output:
+      door:
+        material: WOOD_DOOR
+        amount: 32
+  make_primitive bed:
+    production_time: 4s
+    name: Make Primitive Bed
+    type: PRODUCTION
+    input:
+      wood:
+        material: WOOD
+        amount: 4
+        durability: -1
+      skins:
+        material: LEATHER
+        amount: 3
+    output:
+      bed:
+        material: BED
+        durability: 12
+        amount: 2
+  make_sports_balls:
+    production_time: 4s
+    name: Make Sports Balls
+    type: PRODUCTION
+    input:
+      wood:
+        material: WOOD
+        amount: 64
+        durability: -1
+      wool:
+        material: WOOL
+        amount: 8
+        durability: -1
+      iron:
+        material: IRON_INGOT
+        amount: 1
+    output:
+      door:
+        material: SPONGE
+        amount: 4
+  make_boat:
+    production_time: 4s
+    name: Make Boat
+    type: PRODUCTION
+    input:
+      log:
+        material: LOG
+        amount: 768
+      cloth:
+        material: PAPER
+        amount: 48
+        name: Woven Cloth
+        lore:
+          - "Suitable for use as sailcloth"
+      iron:
+        material: IRON_INGOT
+        amount: 24
+    output:
+      boat:
+        material: BOAT
+        amount: 1
+  repair_carpentry:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      chest:
+        material: WOOD
+        amount: 16
+        durability: -1
+    health_gained: 10000
+  downgrade_to_basic_cauldron:
+    production_time: 4s
+    name: Downgrade to a Basic Experience Factory
+    type: UPGRADE
+    input:
+      stick:
+        material: STICK
+        amount: 320
+    factory: Basic Experience Factory
+  downgrade_to_intermediate_cauldron:
+    production_time: 4s
+    name: Downgrade to an Intermediate Experience Factory
+    type: UPGRADE
+    input:
+      stick:
+        material: STICK
+        amount: 320
+    factory: Intermediate Experience Factory
+  basic_xp_1:
+    production_time: 4s
+    name: Make Exp 1
+    type: PRODUCTION
+    input:
+      glass_bottle:
+        material: GLASS_BOTTLE
+        amount: 81
+      wart:
+        material: NETHER_STALK
+        amount: 960
+        lore:
+          - Ripe, Hand-Picked
+      wheat:
+        material: WHEAT
+        amount: 960
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      exp:
+        material: EMERALD_BLOCK
+        amount: 1
+  basic_xp_2:
+    production_time: 4s
+    name: Make Exp 2
+    type: PRODUCTION
+    input:
+      glass_bottle:
+        material: GLASS_BOTTLE
+        amount: 81
+      beets:
+        material: BEETROOT
+        amount: 960
+        lore:
+          - Ripe, Hand-Picked
+      wheat:
+        material: WHEAT
+        amount: 960
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      exp:
+        material: EMERALD_BLOCK
+        amount: 1
+  basic_xp_3:
+    production_time: 4s
+    name: Make Exp 3
+    type: PRODUCTION
+    input:
+      glass_bottle:
+        material: GLASS_BOTTLE
+        amount: 81
+      potato:
+        material: POTATO_ITEM
+        amount: 960
+        lore:
+          - Ripe, Hand-Picked
+      cocoa:
+        material: INK_SACK
+        amount: 960
+        durability: 3
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      exp:
+        material: EMERALD_BLOCK
+        amount: 1
+  basic_xp_4:
+    production_time: 4s
+    name: Make Exp 4
+    type: PRODUCTION
+    input:
+      glass_bottle:
+        material: GLASS_BOTTLE
+        amount: 81
+      carrot:
+        material: CARROT_ITEM
+        amount: 960
+        lore:
+          - Ripe, Hand-Picked
+      cocoa:
+        material: INK_SACK
+        amount: 960
+        durability: 3
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      exp:
+        material: EMERALD_BLOCK
+        amount: 1
+  basic_xp_5:
+    production_time: 4s
+    name: Make Exp 5
+    type: PRODUCTION
+    input:
+      glass_bottle:
+        material: GLASS_BOTTLE
+        amount: 81
+      beet:
+        material: BEETROOT
+        amount: 960
+        lore:
+          - Ripe, Hand-Picked
+      potato:
+        material: POTATO_ITEM
+        amount: 960
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      exp:
+        material: EMERALD_BLOCK
+        amount: 1
+  basic_xp_6:
+    production_time: 4s
+    name: Make Exp 6
+    type: PRODUCTION
+    input:
+      glass_bottle:
+        material: GLASS_BOTTLE
+        amount: 81
+      wart:
+        material: NETHER_STALK
+        amount: 960
+        lore:
+          - Ripe, Hand-Picked
+      carrot:
+        material: CARROT_ITEM
+        amount: 960
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      exp:
+        material: EMERALD_BLOCK
+        amount: 1
+  nether_star:
+    forceInclude: true
+    production_time: 2s
+    name: Make Nether Star
+    type: PRODUCTION
+    input:
+      exp:
+        material: EMERALD_BLOCK
+        amount: 64
+      diamonds:
+        material: DIAMOND
+        amount: 64
+    output:
+      nether_star:
+        material: NETHER_STAR
+        amount: 1
+  repair_basic_cauldron:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    health_gained: 10000
+  int_xp_1:
+    production_time: 4s
+    name: Make Exp 1
+    type: PRODUCTION
+    input:
+      glass_bottle:
+        material: GLASS_BOTTLE
+        amount: 162
+      wart:
+        material: NETHER_STALK
+        amount: 640
+        lore:
+          - Ripe, Hand-Picked
+      carrot:
+        material: CARROT_ITEM
+        amount: 640
+        lore:
+          - Ripe, Hand-Picked
+      cocoa:
+        material: INK_SACK
+        amount: 640
+        durability: 3
+        lore:
+          - Ripe, Hand-Picked
+      beets:
+        material: BEETROOT
+        amount: 640
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      exp:
+        material: EMERALD
+        amount: 24
+  int_xp_2:
+    production_time: 4s
+    name: Make Exp 2
+    type: PRODUCTION
+    input:
+      glass_bottle:
+        material: GLASS_BOTTLE
+        amount: 162
+      wart:
+        material: NETHER_STALK
+        amount: 640
+        lore:
+          - Ripe, Hand-Picked
+      carrot:
+        material: CARROT_ITEM
+        amount: 640
+        lore:
+          - Ripe, Hand-Picked
+      potato:
+        material: POTATO_ITEM
+        amount: 960
+        lore:
+          - Ripe, Hand-Picked
+      wheat:
+        material: WHEAT
+        amount: 960
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      exp:
+        material: EMERALD
+        amount: 24
+  int_xp_3:
+    production_time: 4s
+    name: Make Exp 3
+    type: PRODUCTION
+    input:
+      glass_bottle:
+        material: GLASS_BOTTLE
+        amount: 162
+      beets:
+        material: BEETROOT
+        amount: 640
+        lore:
+          - Ripe, Hand-Picked
+      carrot:
+        material: CARROT_ITEM
+        amount: 640
+        lore:
+          - Ripe, Hand-Picked
+      cocoa:
+        material: INK_SACK
+        amount: 640
+        durability: 3
+        lore:
+          - Ripe, Hand-Picked
+      wheat:
+        material: WHEAT
+        amount: 640
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      exp:
+        material: EMERALD
+        amount: 24
+  upgrade_to_intermediate_cauldron:
+    production_time: 4s
+    name: Upgrade to Intermediate Experience Factory
+    type: UPGRADE
+    input:
+      diamond:
+        material: DIAMOND
+        amount: 64
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 16
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    factory: Intermediate Experience Factory
+  repair_intermediate_cauldron:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 16
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    health_gained: 10000
+  adv_xp_1:
+    production_time: 4s
+    name: Make Exp 3
+    type: PRODUCTION
+    input:
+      glass_bottle:
+        material: GLASS_BOTTLE
+        amount: 243
+      carrot:
+        material: CARROT_ITEM
+        amount: 448
+        lore:
+          - Ripe, Hand-Picked
+      beets:
+        material: BEETROOT
+        amount: 448
+        lore:
+          - Ripe, Hand-Picked
+      wheat:
+        material: WHEAT
+        amount: 448
+        lore:
+          - Ripe, Hand-Picked
+      cocoa:
+        material: INK_SACK
+        amount: 448
+        durability: 3
+        lore:
+          - Ripe, Hand-Picked
+      potato:
+        material: POTATO_ITEM
+        amount: 448
+        lore:
+          - Ripe, Hand-Picked
+      wart:
+        material: NETHER_STALK
+        amount: 448
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      exp:
+        material: EMERALD_BLOCK
+        amount: 6
+  upgrade_to_advanced_cauldron:
+    production_time: 4s
+    name: Upgrade to Advanced Experience Factory
+    type: UPGRADE
+    input:
+      emerald_block:
+        material: EMERALD_BLOCK
+        amount: 64
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 24
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    factory: Advanced Experience Factory
+  repair_advanced_cauldron:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 24
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    health_gained: 10000
+  charcoal_from_planks:
+    production_time: 4s
+    name: Make Charcoal from Planks
+    type: PRODUCTION
+    input:
+      log:
+        material: WOOD
+        durability: -1
+        amount: 256
+    output:
+      charcoal:
+        material: COAL
+        durability: 1
+        amount: 128
+  charcoal_from_coal:
+    production_time: 4s
+    name: Refine Coal
+    type: PRODUCTION
+    input:
+      coal:
+        material: COAL
+        amount: 64
+    output:
+      charcoal:
+        material: COAL
+        durability: 1
+        amount: 32
+  repair_charcoal_factory:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      charcoal:
+        material: COAL
+        durability: 1
+        amount: 64
+    health_gained: 10000
+  fermented_eye:
+    production_time: 2s
+    name: Make Fermented Eyes
+    type: PRODUCTION
+    input:
+      eyes:
+        material: EYE_OF_ENDER
+        amount: 8
+      sugar:
+        material: SUGAR
+        amount: 16
+    output:
+      fermented:
+        material: FERMENTED_SPIDER_EYE
+        amount: 16
+  slime:
+    production_time: 2s
+    name: Brew Slime
+    type: PRODUCTION
+    input:
+      cactus:
+        material: CACTUS
+        amount: 64
+      milk:
+        material: MILK_BUCKET
+        amount: 1
+    output:
+      slime:
+        material: SLIME_BALL
+        amount: 4
+      bucket:
+        material: BUCKET
+        amount: 1
+  tanning:
+    production_time: 2s
+    name: Tan Leather
+    type: PRODUCTION
+    input:
+      skins:
+        material: ROTTEN_FLESH
+        name: Animal Skin
+        lore:
+          - Add to Alum
+          - to make Leather
+        amount: 64
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 8
+    output:
+      leather:
+        material: LEATHER
+        amount: 64
+  magma_cream:
+    production_time: 2s
+    name: Make Magma Cream
+    type: PRODUCTION
+    input:
+      slime:
+        material: SLIME_BALL
+        amount: 64
+      blaze:
+        material: BLAZE_POWDER
+        amount: 8
+    output:
+      craft:
+        material: MAGMA_CREAM
+        amount: 32
+  blaze_rods:
+    production_time: 2s
+    name: Extract Blaze Rods
+    type: PRODUCTION
+    input:
+      magma block:
+        material: MAGMA
+        amount: 64
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      craft:
+        material: BLAZE_ROD
+        amount: 20
+      netherrack:
+        material: NETHERRACK
+        amount: 60
+  craft_eyes_of_ender:
+    production_time: 2s
+    name: Craft Eyes of Ender
+    type: PRODUCTION
+    input:
+      Blaze_Powder:
+        material: BLAZE_POWDER
+        amount: 1
+      Ender_Pearl:
+        material: ENDER_PEARL
+        name: Exile Pearl
+        lore:
+          - Used to exile other players
+          - Do not move pearls between worlds.
+        amount: 1
+    output:
+      craft:
+        material: EYE_OF_ENDER
+        amount: 1
+  extract_mithril_strands:
+    production_time: 4s
+    name: Extract Mithril Strands
+    type: PRODUCTION
+    input:
+      diamond:
+        material: DIAMOND
+        amount: 16
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 8
+        name: Sulfur
+      slime:
+        material: SLIME_BALL
+        amount: 16
+      blaze_Powder:
+        material: BLAZE_POWDER
+        amount: 2
+    output:
+      mithril_strands:
+        material: STRING
+        amount: 16
+        name: Mithril Strands
+        lore:
+          - "A spool of fibers spun from chemically altered diamonds"
+  repair_chemistry_factory:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      charcoal:
+        material: COAL
+        durability: 1
+        amount: 16
+    health_gained: 10000
+  potassium_nitrate:
+    production_time: 4s
+    name: Potassium Nitrate
+    type: PRODUCTION
+    input:
+      sand:
+        material: SOUL_SAND
+        amount: 16
+    output:
+      potassium_nitrate:
+        material: SUGAR
+        name: Potassium Nitrate
+        amount: 16
+        lore:
+          - "Gunpowder Ingredient"
+  mix_concrete_white:
+    production_time: 4s
+    name: Mix White Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      white_dye:
+        material: INK_SACK
+        durability: 15
+        amount: 4
+    output:
+      white_concrete:
+        material: CONCRETE_POWDER
+        durability: 0
+        amount: 64
+  mix_concrete_orange:
+    production_time: 4s
+    name: Mix Orange Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      orange_dye:
+        material: INK_SACK
+        durability: 14
+        amount: 4
+    output:
+      orange_concrete:
+        material: CONCRETE_POWDER
+        durability: 1
+        amount: 64
+  mix_concrete_magenta:
+    production_time: 4s
+    name: Mix Magenta Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      magenta_dye:
+        material: INK_SACK
+        durability: 13
+        amount: 4
+    output:
+      magenta_concrete:
+        material: CONCRETE_POWDER
+        durability: 2
+        amount: 64
+  mix_concrete_light_blue:
+    production_time: 4s
+    name: Mix Light Blue Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      light_blue_dye:
+        material: INK_SACK
+        durability: 12
+        amount: 4
+    output:
+      light_blue_concrete:
+        material: CONCRETE_POWDER
+        durability: 3
+        amount: 64
+  mix_concrete_yellow:
+    production_time: 4s
+    name: Mix Yellow Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      yellow_dye:
+        material: INK_SACK
+        durability: 11
+        amount: 4
+    output:
+      yellow_concrete:
+        material: CONCRETE_POWDER
+        durability: 4
+        amount: 64
+  mix_concrete_lime:
+    production_time: 4s
+    name: Mix Lime Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      lime_dye:
+        material: INK_SACK
+        durability: 10
+        amount: 4
+    output:
+      lime_concrete:
+        material: CONCRETE_POWDER
+        durability: 5
+        amount: 64
+  mix_concrete_pink:
+    production_time: 4s
+    name: Mix Pink Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      pink_dye:
+        material: INK_SACK
+        durability: 9
+        amount: 4
+    output:
+      pink_concrete:
+        material: CONCRETE_POWDER
+        durability: 6
+        amount: 64
+  mix_concrete_gray:
+    production_time: 4s
+    name: Mix Gray Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      gray_dye:
+        material: INK_SACK
+        durability: 8
+        amount: 4
+    output:
+      gray_concrete:
+        material: CONCRETE_POWDER
+        durability: 7
+        amount: 64
+  mix_concrete_light_gray:
+    production_time: 4s
+    name: Mix Light Gray Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      light_gray_dye:
+        material: INK_SACK
+        durability: 7
+        amount: 4
+    output:
+      light_gray_concrete:
+        material: CONCRETE_POWDER
+        durability: 8
+        amount: 64
+  mix_concrete_cyan:
+    production_time: 4s
+    name: Mix Cyan Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      cyan_dye:
+        material: INK_SACK
+        durability: 6
+        amount: 4
+    output:
+      cyan_concrete:
+        material: CONCRETE_POWDER
+        durability: 9
+        amount: 64
+  mix_concrete_purple:
+    production_time: 4s
+    name: Mix Purple Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      purple_dye:
+        material: INK_SACK
+        durability: 5
+        amount: 4
+    output:
+      purple_concrete:
+        material: CONCRETE_POWDER
+        durability: 10
+        amount: 64
+  mix_concrete_blue:
+    production_time: 4s
+    name: Mix Blue Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      blue_dye:
+        material: INK_SACK
+        durability: 4
+        amount: 4
+    output:
+      blue_concrete:
+        material: CONCRETE_POWDER
+        durability: 11
+        amount: 64
+  mix_concrete_brown:
+    production_time: 4s
+    name: Mix Brown Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      brown_dye:
+        material: INK_SACK
+        durability: 3
+        amount: 4
+    output:
+      brown_concrete:
+        material: CONCRETE_POWDER
+        durability: 12
+        amount: 64
+  mix_concrete_green:
+    production_time: 4s
+    name: Mix Green Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      green_dye:
+        material: INK_SACK
+        durability: 2
+        amount: 4
+    output:
+      green_concrete:
+        material: CONCRETE_POWDER
+        durability: 13
+        amount: 64
+  mix_concrete_red:
+    production_time: 4s
+    name: Mix Red Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      red_dye:
+        material: INK_SACK
+        durability: 1
+        amount: 4
+    output:
+      red_concrete:
+        material: CONCRETE_POWDER
+        durability: 14
+        amount: 64
+  mix_concrete_black:
+    production_time: 4s
+    name: Mix Black Concrete
+    type: PRODUCTION
+    input:
+      sand:
+        material: SAND
+        amount: 32
+      gravel:
+        material: GRAVEL
+        amount: 32
+      black_dye:
+        material: INK_SACK
+        durability: 0
+        amount: 4
+    output:
+      black_concrete:
+        material: CONCRETE_POWDER
+        durability: 15
+        amount: 64
+  repair_mixer:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      sand:
+        material: SAND
+        amount: 16
+      gravel:
+        material: GRAVEL
+        amount: 16
+    health_gained: 10000
+###################################################################################################################
+########################################### old recipes
+
+  
+  upgrade_to_music:
+    production_time: 4s
+    name: Recipe for Record Factory
+    type: UPGRADE
+    input:
+      doxxer_tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - ":("
+    factory: Record Factory
+  upgrade_to_charcoal_factory:
+    production_time: 4s
+    name: Recipe for Charcoal Factory
+    type: UPGRADE
+    input:
+      stone:
+        material: COAL
+        durability: 1
+        amount: 512
+    factory: Charcoal Factory
+  upgrade_to_kiln:
+    production_time: 4s
+    name: Recipe for Kiln
+    type: UPGRADE
+    input:
+      stone:
+        material: STONE
+        amount: 384
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    factory: Kiln
+  upgrade_to_furnace:
+    production_time: 4s
+    name: Upgrade to Furnace
+    type: UPGRADE
+    input:
+      bricks:
+        material: BRICK
+        amount: 384
+      netherbrick:
+        material: NETHER_BRICK
+        amount: 128
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 64
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 16
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    factory: Furnace
+  upgrade_to_blast_furnace:
+    production_time: 4s
+    name: Upgrade to Blast Furnace
+    type: UPGRADE
+    input:
+      bricks:
+        material: BRICK
+        amount: 384
+      netherbrick:
+        material: NETHER_BRICK
+        amount: 128
+      diamonds:
+        material: DIAMOND
+        amount: 128
+      steel:
+        material: IRON_INGOT
+        amount: 16
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    factory: Blast Furnace
+  upgrade_to_explosives_factory:
+    production_time: 4s
+    name: Upgrade to Explosives Factory
+    type: UPGRADE
+    input:
+      equipment:
+        material: CAULDRON_ITEM
+        amount: 8
+      glassware:
+        material: GLASS_BOTTLE
+        amount: 64
+      logs:
+        material: WOOD
+        durability: -1
+        amount: 512
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    factory: Explosives Factory
+  upgrade_to_mill:
+    production_time: 4s
+    name: Recipe for Grinding Mill
+    type: UPGRADE
+    input:
+      stone:
+        material: STONE
+        amount: 128
+      log:
+        material: WOOD
+        amount: 512
+        durability: -1
+      leather:
+        material: LEATHER
+        amount: 32
+    factory: Grinding Mill
+  upgrade_to_textile:
+    production_time: 30s
+    name: Recipe for Textile Factory
+    type: UPGRADE
+    input:
+      leather:
+        material: LEATHER
+        amount: 64
+      wool:
+        material: WOOL
+        amount: 256
+    factory: Textile Factory
+  upgrade_to_aesthetics:
+    production_time: 4s
+    name: Recipe for Aesthetics Factory
+    type: UPGRADE
+    input:
+      stone:
+        material: SANDSTONE
+        amount: 256
+      dandelionyellow:
+        material: INK_SACK
+        amount: 64
+        durability: 11
+      rosered:
+        material: INK_SACK
+        amount: 64
+        durability: 1
+    factory: Aesthetics Factory
+  upgrade_to_chemistry_factory:
+    production_time: 4s
+    name: Recipe for Chemistry Factory
+    type: UPGRADE
+    input:
+      equipment:
+        material: BREWING_STAND_ITEM
+        amount: 8
+      glassware:
+        material: GLASS_BOTTLE
+        amount: 64
+      charcoal:
+        material: COAL
+        amount: 64
+        durability: 1
+      cauldrons:
+        material: CAULDRON_ITEM
+        amount: 4
+    factory: Chemistry Factory
+  upgrade_to_steel_armor_smith:
+    production_time: 4s
+    name: Recipe for Steel Armor Smith
+    type: UPGRADE
+    input:
+      steel:
+        material: IRON_INGOT
+        amount: 96
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    factory: Steel Armor Smith
+  upgrade_to_steel_tool_smith:
+    production_time: 4s
+    name: Recipe for Steel Tool Smith
+    type: UPGRADE
+    input:
+      steel:
+        material: IRON_INGOT
+        amount: 64
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    factory: Steel Tool Smith
+  upgrade_to_bronze_armor_smith:
+    production_time: 4s
+    name: Recipe for Bronze Armor Smith
+    type: UPGRADE
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 96
+    factory: Bronze Armor Smith
+  upgrade_to_bronze_tool_smith:
+    production_time: 4s
+    name: Recipe for Bronze Tool Smith
+    type: UPGRADE
+    input:
+      bronze:
+        material: GOLD_INGOT
+        name: "Bronze Ingot"
+        lore:
+          - "An alloy of tin and copper"
+        amount: 64
+    factory: Bronze Tool Smith
+  upgrade_to_iron_armor_smith:
+    production_time: 4s
+    name: Recipe for Iron Armor Smith
+    type: UPGRADE
+    input:
+      bronze:
+        material: IRON_INGOT
+        amount: 96
+    factory: Iron Armor Smith
+  upgrade_to_iron_tool_smith:
+    production_time: 4s
+    name: Recipe for Iron Tool Smith
+    type: UPGRADE
+    input:
+      bronze:
+        material: IRON_INGOT
+        amount: 64
+    factory: Iron Tool Smith
+  upgrade_to_mithril_armor_factory:
+    production_time: 4s
+    name: Recipe for Mithril Armor Factory
+    type: UPGRADE
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 320
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+    factory: Mithril Armor Factory
+  upgrade_to_mithril_tool_factory:
+    production_time: 4s
+    name: Recipe for Mithril Tool Factory
+    type: UPGRADE
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 240
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+    factory: Mithril Tool Factory
+  upgrade_to_concrete:
+    forceInclude: true
+    production_time: 4s
+    name: Recipe for Concrete Mixer
+    type: UPGRADE
+    input:
+      sand:
+        material: SAND
+        amount: 64
+      gravel:
+        material: GRAVEL
+        amount: 64
+    factory: Concrete Mixer
+  upgrade_to_bio_lab:
+    production_time: 4s
+    name: Recipe for Bio Lab
+    type: UPGRADE
+    input:
+      sapling:
+        material: SAPLING
+        amount: 32
+        durability: -1
+      Dirt!:
+        material: DIRT
+        amount: 128
+    factory: Bio Lab
+  upgrade_to_carpentry:
+    production_time: 4s
+    name: Recipe for Carpentry Factory
+    type: UPGRADE
+    input:
+      chest:
+        material: WOOD
+        amount: 256
+        durability: -1
+    factory: Carpentry Factory
+  upgrade_to_rails:
+    production_time: 4s
+    name: Recipe for Rail Factory
+    type: UPGRADE
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 64
+      steel:
+        material: IRON_INGOT
+        amount: 8
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      redstone:
+        material: REDSTONE
+        amount: 32
+      gold:
+        material: GOLD_BLOCK
+        amount: 1
+    factory: Rail Factory
+  upgrade_to_forge:
+    production_time: 4s
+    name: Recipe for Forge
+    type: UPGRADE
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 128
+      lava_bucket:
+        material: LAVA_BUCKET
+        amount: 1
+    factory: Forge
+  upgrade_to_redstone:
+    production_time: 4s
+    name: Recipe for Mechanics Factory
+    type: UPGRADE
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 64
+      redstone:
+        material: REDSTONE
+        amount: 256
+      gold:
+        material: GOLD_BLOCK
+        amount: 4
+    factory: Mechanics Factory
+  upgrade_to_bastion:
+    production_time: 4s
+    name: Recipe for Bastion Factory
+    type: UPGRADE
+    input:
+      redstone:
+        material: REDSTONE_BLOCK
+        amount: 10
+      iron:
+        material: IRON_BLOCK
+        amount: 22
+      obby:
+        material: OBSIDIAN
+        amount: 64
+      gold:
+        material: GOLD_BLOCK
+        amount: 6
+      gunpowder:
+        material: SULPHUR
+        amount: 16
+      diamonds:
+        material: DIAMOND
+        amount: 8
+      lapis:
+        material: LAPIS_BLOCK
+        amount: 10
+      xp:
+        material: EMERALD_BLOCK
+        amount: 2
+      slime:
+        material: SLIME_BALL
+        amount: 4
+      pearls:
+        material: ENDER_PEARL
+        name: Exile Pearl
+        lore:
+          - Used to exile other players
+          - Do not move pearls between worlds.
+        amount: 4
+      stamina:
+        golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 2
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    factory: Bastion Factory
+  upgrade_to_basic_cauldron:
+    production_time: 4s
+    name: Recipe for Basic Experience Factory
+    type: UPGRADE
+    input:
+      cauldron:
+        material: CAULDRON_ITEM
+        amount: 1
+      iron:
+        material: IRON_INGOT
+        amount: 128
+      gold:
+        material: GOLD_BLOCK
+        amount: 4
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    factory: Basic Experience Factory
+  upgrade_to_compactor:
+    production_time: 4s
+    name: Recipe for Compactor
+    type: UPGRADE
+    input:
+      iron_block:
+        material: IRON_BLOCK
+        amount: 32
+      redstone_block:
+        material: REDSTONE_BLOCK
+        amount: 16
+      piston:
+        material: PISTON_BASE
+        amount: 64
+      crate:
+        material: CHEST
+        amount: 32
+        lore:
+          - Crate
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 5
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    factory: Compactor
+  upgrade_to_printer:
+    forceInclude: true
+    production_time: 4s
+    type: UPGRADE
+    name: Recipe for Printing Press
+    input:
+      ink:
+        material: INK_SACK
+        amount: 32
+      paper:
+        material: PAPER
+        amount: 64
+    factory: Printing Press
+  upgrade_to_clay_dye:
+    production_time: 4s
+    name: Recipe for Clay Dying Factory
+    type: UPGRADE
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 32
+        durability: -1
+    factory: Clay Dying Factory
+  upgrade_to_wool_dye:
+    production_time: 4s
+    name: Recipe for Wool Dying Factory
+    type: UPGRADE
+    input:
+      wool:
+        material: WOOL
+        amount: 32
+        durability: -1
+    factory: Wool Dying Factory
+  upgrade_to_glass_dye:
+    production_time: 4s
+    name: Recipe for Glass Dying Factory
+    type: UPGRADE
+    input:
+      glass:
+        material: GLASS
+        amount: 32
+    factory: Glass Dying Factory
+  dye_clay_white:
+    production_time: 4s
+    name: Dye Clay White
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      white_dye:
+        material: INK_SACK
+        durability: 15
+        amount: 4
+    output:
+      white_clay:
+        material: STAINED_CLAY
+        durability: 0
+        amount: 64
+  dye_clay_orange:
+    production_time: 4s
+    name: Dye Clay Orange
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      orange_dye:
+        material: INK_SACK
+        durability: 14
+        amount: 4
+    output:
+      orange_clay:
+        material: STAINED_CLAY
+        durability: 1
+        amount: 64
+  dye_clay_magenta:
+    production_time: 4s
+    name: Dye Clay Magenta
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      magenta_dye:
+        material: INK_SACK
+        durability: 13
+        amount: 4
+    output:
+      magenta_clay:
+        material: STAINED_CLAY
+        durability: 2
+        amount: 64
+  dye_clay_light_blue:
+    production_time: 4s
+    name: Dye Clay Light Blue
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      light_blue_dye:
+        material: INK_SACK
+        durability: 12
+        amount: 4
+    output:
+      light_blue_clay:
+        material: STAINED_CLAY
+        durability: 3
+        amount: 64
+  dye_clay_yellow:
+    production_time: 4s
+    name: Dye Clay Yellow
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      yellow_dye:
+        material: INK_SACK
+        durability: 11
+        amount: 4
+    output:
+      yellow_clay:
+        material: STAINED_CLAY
+        durability: 4
+        amount: 64
+  dye_clay_lime:
+    production_time: 4s
+    name: Dye Clay Lime
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      lime_dye:
+        material: INK_SACK
+        durability: 10
+        amount: 4
+    output:
+      lime_clay:
+        material: STAINED_CLAY
+        durability: 5
+        amount: 64
+  dye_clay_pink:
+    production_time: 4s
+    name: Dye Clay Pink
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      pink_dye:
+        material: INK_SACK
+        durability: 9
+        amount: 4
+    output:
+      pink_clay:
+        material: STAINED_CLAY
+        durability: 6
+        amount: 64
+  dye_clay_gray:
+    production_time: 4s
+    name: Dye Clay Gray
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      gray_dye:
+        material: INK_SACK
+        durability: 8
+        amount: 4
+    output:
+      gray_clay:
+        material: STAINED_CLAY
+        durability: 7
+        amount: 64
+  dye_clay_light_gray:
+    production_time: 4s
+    name: Dye Clay Light Gray
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      light_gray_dye:
+        material: INK_SACK
+        durability: 7
+        amount: 4
+    output:
+      light_gray_clay:
+        material: STAINED_CLAY
+        durability: 8
+        amount: 64
+  dye_clay_cyan:
+    production_time: 4s
+    name: Dye Clay Cyan
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      cyan_dye:
+        material: INK_SACK
+        durability: 6
+        amount: 4
+    output:
+      cyan_clay:
+        material: STAINED_CLAY
+        durability: 9
+        amount: 64
+  dye_clay_purple:
+    production_time: 4s
+    name: Dye Clay Purple
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      purple_dye:
+        material: INK_SACK
+        durability: 5
+        amount: 4
+    output:
+      purple_clay:
+        material: STAINED_CLAY
+        durability: 10
+        amount: 64
+  dye_clay_blue:
+    production_time: 4s
+    name: Dye Clay Blue
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      blue_dye:
+        material: INK_SACK
+        durability: 4
+        amount: 4
+    output:
+      blue_clay:
+        material: STAINED_CLAY
+        durability: 11
+        amount: 64
+  dye_clay_brown:
+    production_time: 4s
+    name: Dye Clay Brown
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      brown_dye:
+        material: INK_SACK
+        durability: 3
+        amount: 4
+    output:
+      brown_clay:
+        material: STAINED_CLAY
+        durability: 12
+        amount: 64
+  dye_clay_green:
+    production_time: 4s
+    name: Dye Clay Green
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      green_dye:
+        material: INK_SACK
+        durability: 2
+        amount: 4
+    output:
+      green_clay:
+        material: STAINED_CLAY
+        durability: 13
+        amount: 64
+  dye_clay_red:
+    production_time: 4s
+    name: Dye Clay Red
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      red_dye:
+        material: INK_SACK
+        durability: 1
+        amount: 4
+    output:
+      red_clay:
+        material: STAINED_CLAY
+        durability: 14
+        amount: 64
+  dye_clay_black:
+    production_time: 4s
+    name: Dye Clay Black
+    type: PRODUCTION
+    input:
+      clay:
+        material: HARD_CLAY
+        amount: 64
+        durability: -1
+      black_dye:
+        material: INK_SACK
+        durability: 0
+        amount: 4
+    output:
+      black_clay:
+        material: STAINED_CLAY
+        durability: 15
+        amount: 64
+  dye_wool_white:
+    production_time: 4s
+    name: Dye Wool White
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      white_dye:
+        material: INK_SACK
+        durability: 15
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      white_wool:
+        material: WOOL
+        durability: 0
+        amount: 64
+  dye_wool_orange:
+    production_time: 4s
+    name: Dye Wool Orange
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      orange_dye:
+        material: INK_SACK
+        durability: 14
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      orange_wool:
+        material: WOOL
+        durability: 1
+        amount: 64
+  dye_wool_magenta:
+    production_time: 4s
+    name: Dye Wool Magenta
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      magenta_dye:
+        material: INK_SACK
+        durability: 13
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      magenta_wool:
+        material: WOOL
+        durability: 2
+        amount: 64
+  dye_wool_light_blue:
+    production_time: 4s
+    name: Dye Wool Light Blue
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      light_blue_dye:
+        material: INK_SACK
+        durability: 12
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      light_blue_wool:
+        material: WOOL
+        durability: 3
+        amount: 64
+  dye_wool_yellow:
+    production_time: 4s
+    name: Dye Wool Yellow
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      yellow_dye:
+        material: INK_SACK
+        durability: 11
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      yellow_wool:
+        material: WOOL
+        durability: 4
+        amount: 64
+  dye_wool_lime:
+    production_time: 4s
+    name: Dye Wool Lime
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      lime_dye:
+        material: INK_SACK
+        durability: 10
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      lime_wool:
+        material: WOOL
+        durability: 5
+        amount: 64
+  dye_wool_pink:
+    production_time: 4s
+    name: Dye Wool Pink
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      pink_dye:
+        material: INK_SACK
+        durability: 9
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      pink_wool:
+        material: WOOL
+        durability: 6
+        amount: 64
+  dye_wool_gray:
+    production_time: 4s
+    name: Dye Wool Gray
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      gray_dye:
+        material: INK_SACK
+        durability: 8
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      gray_wool:
+        material: WOOL
+        durability: 7
+        amount: 64
+  dye_wool_light_gray:
+    production_time: 4s
+    name: Dye Wool Light Gray
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      light_gray_dye:
+        material: INK_SACK
+        durability: 7
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      light_gray_wool:
+        material: WOOL
+        durability: 8
+        amount: 64
+  dye_wool_cyan:
+    production_time: 4s
+    name: Dye Wool Cyan
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      cyan_dye:
+        material: INK_SACK
+        durability: 6
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      cyan_wool:
+        material: WOOL
+        durability: 9
+        amount: 64
+  dye_wool_purple:
+    production_time: 4s
+    name: Dye Wool Purple
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      purple_dye:
+        material: INK_SACK
+        durability: 5
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      purple_wool:
+        material: WOOL
+        durability: 10
+        amount: 64
+  dye_wool_blue:
+    production_time: 4s
+    name: Dye Wool Blue
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      blue_dye:
+        material: INK_SACK
+        durability: 4
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      blue_wool:
+        material: WOOL
+        durability: 11
+        amount: 64
+  dye_wool_brown:
+    production_time: 4s
+    name: Dye Wool Brown
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      brown_dye:
+        material: INK_SACK
+        durability: 3
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      brown_wool:
+        material: WOOL
+        durability: 12
+        amount: 64
+  dye_wool_green:
+    production_time: 4s
+    name: Dye Wool Green
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      green_dye:
+        material: INK_SACK
+        durability: 2
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      green_wool:
+        material: WOOL
+        durability: 13
+        amount: 64
+  dye_wool_red:
+    production_time: 4s
+    name: Dye Wool Red
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      red_dye:
+        material: INK_SACK
+        durability: 1
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      red_wool:
+        material: WOOL
+        durability: 14
+        amount: 64
+  dye_wool_black:
+    production_time: 4s
+    name: Dye Wool Black
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+        durability: 0
+      black_dye:
+        material: INK_SACK
+        durability: 0
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      black_wool:
+        material: WOOL
+        durability: 15
+        amount: 64
+  dye_glass_white:
+    production_time: 4s
+    name: Dye Glass White
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      white_dye:
+        material: INK_SACK
+        durability: 15
+        amount: 4
+    output:
+      white_glass:
+        material: STAINED_GLASS
+        durability: 0
+        amount: 64
+  dye_glass_orange:
+    production_time: 4s
+    name: Dye Glass Orange
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      orange_dye:
+        material: INK_SACK
+        durability: 14
+        amount: 4
+    output:
+      orange_glass:
+        material: STAINED_GLASS
+        durability: 1
+        amount: 64
+  dye_glass_magenta:
+    production_time: 4s
+    name: Dye Glass Magenta
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      magenta_dye:
+        material: INK_SACK
+        durability: 13
+        amount: 4
+    output:
+      magenta_glass:
+        material: STAINED_GLASS
+        durability: 2
+        amount: 64
+  dye_glass_light_blue:
+    production_time: 4s
+    name: Dye Glass Light Blue
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      light_blue_dye:
+        material: INK_SACK
+        durability: 12
+        amount: 4
+    output:
+      light_blue_glass:
+        material: STAINED_GLASS
+        durability: 3
+        amount: 64
+  dye_glass_yellow:
+    production_time: 4s
+    name: Dye Glass Yellow
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      yellow_dye:
+        material: INK_SACK
+        durability: 11
+        amount: 4
+    output:
+      yellow_glass:
+        material: STAINED_GLASS
+        durability: 4
+        amount: 64
+  dye_glass_lime:
+    production_time: 4s
+    name: Dye Glass Lime
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      lime_dye:
+        material: INK_SACK
+        durability: 10
+        amount: 4
+    output:
+      lime_glass:
+        material: STAINED_GLASS
+        durability: 5
+        amount: 64
+  dye_glass_pink:
+    production_time: 4s
+    name: Dye Glass Pink
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      pink_dye:
+        material: INK_SACK
+        durability: 9
+        amount: 4
+    output:
+      pink_glass:
+        material: STAINED_GLASS
+        durability: 6
+        amount: 64
+  dye_glass_gray:
+    production_time: 4s
+    name: Dye Glass Gray
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      gray_dye:
+        material: INK_SACK
+        durability: 8
+        amount: 4
+    output:
+      gray_glass:
+        material: STAINED_GLASS
+        durability: 7
+        amount: 64
+  dye_glass_light_gray:
+    production_time: 4s
+    name: Dye Glass Light Gray
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      light_gray_dye:
+        material: INK_SACK
+        durability: 7
+        amount: 4
+    output:
+      light_gray_glass:
+        material: STAINED_GLASS
+        durability: 8
+        amount: 64
+  dye_glass_cyan:
+    production_time: 4s
+    name: Dye Glass Cyan
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      cyan_dye:
+        material: INK_SACK
+        durability: 6
+        amount: 4
+    output:
+      cyan_glass:
+        material: STAINED_GLASS
+        durability: 9
+        amount: 64
+  dye_glass_purple:
+    production_time: 4s
+    name: Dye Glass Purple
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      purple_dye:
+        material: INK_SACK
+        durability: 5
+        amount: 4
+    output:
+      purple_glass:
+        material: STAINED_GLASS
+        durability: 10
+        amount: 64
+  dye_glass_blue:
+    production_time: 4s
+    name: Dye Glass Blue
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      blue_dye:
+        material: INK_SACK
+        durability: 4
+        amount: 4
+    output:
+      blue_glass:
+        material: STAINED_GLASS
+        durability: 11
+        amount: 64
+  dye_glass_brown:
+    production_time: 4s
+    name: Dye Glass Brown
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      brown_dye:
+        material: INK_SACK
+        durability: 3
+        amount: 4
+    output:
+      brown_glass:
+        material: STAINED_GLASS
+        durability: 12
+        amount: 64
+  dye_glass_green:
+    production_time: 4s
+    name: Dye Glass Green
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      green_dye:
+        material: INK_SACK
+        durability: 2
+        amount: 4
+    output:
+      green_glass:
+        material: STAINED_GLASS
+        durability: 13
+        amount: 64
+  dye_glass_red:
+    production_time: 4s
+    name: Dye Glass Red
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      red_dye:
+        material: INK_SACK
+        durability: 1
+        amount: 4
+    output:
+      red_glass:
+        material: STAINED_GLASS
+        durability: 14
+        amount: 64
+  dye_glass_black:
+    production_time: 4s
+    name: Dye Glass Black
+    type: PRODUCTION
+    input:
+      glass:
+        material: GLASS
+        amount: 64
+      black_dye:
+        material: INK_SACK
+        durability: 0
+        amount: 4
+    output:
+      black_glass:
+        material: STAINED_GLASS
+        durability: 15
+        amount: 64
+  repair_wool:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      wool:
+        material: WOOL
+        durability: -1
+        amount: 16
+    health_gained: 10000
+  repair_clay:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      clay:
+        material: HARD_CLAY
+        durability: -1
+        amount: 16
+    health_gained: 10000
+  repair_glass:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      glass:
+        material: GLASS
+        amount: 16
+    health_gained: 10000
+  dye_carpets_white:
+    production_time: 4s
+    name: Dye Carpets White
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 15
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 0
+        amount: 64
+  dye_carpets_orange:
+    production_time: 4s
+    name: Dye Carpets Orange
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 14
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 1
+        amount: 64
+  dye_carpets_magenta:
+    production_time: 4s
+    name: Dye Carpets Magenta
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 13
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 2
+        amount: 64
+  dye_carpets_light_blue:
+    production_time: 4s
+    name: Dye Carpets Light Blue
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 12
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 3
+        amount: 64
+  dye_carpets_yellow:
+    production_time: 4s
+    name: Dye Carpets Yellow
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 11
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 4
+        amount: 64
+  dye_carpets_lime:
+    production_time: 4s
+    name: Dye Carpets Lime
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 10
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 5
+        amount: 64
+  dye_carpets_pink:
+    production_time: 4s
+    name: Dye Carpets Pink
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 9
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 6
+        amount: 64
+  dye_carpets_gray:
+    production_time: 4s
+    name: Dye Carpets Gray
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 8
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 7
+        amount: 64
+  dye_carpets_light_gray:
+    production_time: 4s
+    name: Dye Carpets Light Gray
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 7
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 8
+        amount: 64
+  dye_carpets_cyan:
+    production_time: 4s
+    name: Dye Carpets Cyan
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 6
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 9
+        amount: 64
+  dye_carpets_purple:
+    production_time: 4s
+    name: Dye Carpets Purple
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 5
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 10
+        amount: 64
+  dye_carpets_blue:
+    production_time: 4s
+    name: Dye Carpets Blue
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 4
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 11
+        amount: 64
+  dye_carpets_brown:
+    production_time: 4s
+    name: Dye Carpets Brown
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 3
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 12
+        amount: 64
+  dye_carpets_green:
+    production_time: 4s
+    name: Dye Carpets Green
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 2
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 13
+        amount: 64
+  dye_carpets_red:
+    production_time: 4s
+    name: Dye Carpets Red
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 1
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 14
+        amount: 64
+  dye_carpets_black:
+    production_time: 4s
+    name: Dye Carpets Black
+    type: PRODUCTION
+    input:
+      carpet:
+        material: CARPET
+        durability: -1
+        amount: 64
+      dye:
+        material: INK_SACK
+        durability: 0
+        amount: 4
+      alum:
+        material: QUARTZ
+        name: Alum
+        lore:
+          - Add to Animal Skin
+          - to make Leather
+        amount: 4
+    output:
+      carpet:
+        material: CARPET
+        durability: 15
+        amount: 64
+  make_tnt:
+    production_time: 4s
+    name: Make TNT
+    type: PRODUCTION
+    input:
+      gunpowder:
+        material: SULPHUR
+        amount: 32
+      fuse:
+        material: STRING
+        amount: 16
+      clay:
+        material: CLAY
+        amount: 8
+    output:
+      tnt:
+        material: TNT
+        amount: 8
+  make_gunpowder:
+    production_time: 4s
+    name: Make Gunpowder
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 8
+        name: Sulfur
+      potassium_nitrate:
+        material: SUGAR
+        amount: 64
+        name: Potassium Nitrate
+        lore:
+          - Gunpowder Ingredient
+      charcoal:
+        material: COAL
+        durability: 1
+        amount: 16
+    output:
+      gunpowder:
+        material: SULPHUR
+        amount: 64
+  make_fire_charges:
+    production_time: 4s
+    name: Make Fire Charge
+    type: PRODUCTION
+    input:
+      gunpowder:
+        material: SULPHUR
+        amount: 32
+      fuse:
+        material: STRING
+        amount: 32
+      clay:
+        material: CLAY
+        amount: 4
+    output:
+      tnt:
+        material: FIREBALL
+        amount: 16
+  repair_explosives_factory:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+      cauldron:
+        material: CAULDRON_ITEM
+        amount: 1
+    health_gained: 10000
+  repair_grill:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 8
+    health_gained: 10000
+  repair_bakery:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      brick:
+        material: BRICK
+        amount: 4
+    health_gained: 10000
+  cook_beef:
+    production_time: 4s
+    name: Cook Beef
+    type: PRODUCTION
+    input:
+      raw_beef:
+        material: RAW_BEEF
+        amount: 32
+    output:
+      cooked_beef:
+        material: COOKED_BEEF
+        amount: 48
+  cook_chicken:
+    production_time: 4s
+    name: Cook Chicken
+    type: PRODUCTION
+    input:
+      raw_chicken:
+        material: RAW_CHICKEN
+        amount: 32
+    output:
+      cooked_chicken:
+        material: COOKED_CHICKEN
+        amount: 48
+  cook_fish:
+    production_time: 4s
+    name: Cook Fish
+    type: PRODUCTION
+    input:
+      raw_fish:
+        material: RAW_FISH
+        amount: 32
+    output:
+      cooked_fish:
+        material: COOKED_FISH
+        amount: 48
+  cook_mutton:
+    production_time: 4s
+    name: Cook Mutton
+    type: PRODUCTION
+    input:
+      raw_mutton:
+        material: MUTTON
+        amount: 32
+    output:
+      cooked_mutton:
+        material: COOKED_MUTTON
+        amount: 48
+  cook_pork:
+    production_time: 4s
+    name: Cook Pork
+    type: PRODUCTION
+    input:
+      raw_pork:
+        material: PORK
+        amount: 32
+    output:
+      cooked_pork:
+        material: GRILLED_PORK
+        amount: 48
+  cook_rabbit:
+    production_time: 4s
+    name: Cook Rabbit
+    type: PRODUCTION
+    input:
+      raw_rabbit:
+        material: RABBIT
+        amount: 32
+    output:
+      cooked_rabbit:
+        material: COOKED_RABBIT
+        amount: 48
+  cook_salmon:
+    production_time: 4s
+    name: Cook Salmon
+    type: PRODUCTION
+    input:
+      raw_salmon:
+        material: RAW_FISH
+        amount: 32
+        durability: 1
+    output:
+      cooked_salmon:
+        material: COOKED_FISH
+        amount: 48
+        durability: 1
+  bake_bread:
+    production_time: 4s
+    name: Bake Bread
+    type: PRODUCTION
+    input:
+      wheat:
+        material: WHEAT
+        amount: 32
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      bread:
+        material: BREAD
+        amount: 48
+  bake_potatoes:
+    production_time: 4s
+    name: Bake Potatoes
+    type: PRODUCTION
+    input:
+      potato:
+        material: POTATO_ITEM
+        amount: 32
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      baked_potato:
+        material: BAKED_POTATO
+        amount: 48
+  upgrade_to_bakery:
+    production_time: 4s
+    name: Recipe for Bakery
+    type: UPGRADE
+    input:
+      brick:
+        material: BRICK
+        amount: 16
+      log:
+        material: WOOD
+        durability: -1
+        amount: 48
+    factory: Bakery
+  upgrade_to_grill:
+    production_time: 4s
+    name: Recipe for Grill
+    type: UPGRADE
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+      stone:
+        material: STONE
+        amount: 128
+    factory: Grill
+  bake_cookies:
+    forceInclude: true
+    type: PRODUCTION
+    name: Bake Cookies
+    production_time: 4s
+    input:
+      wheat:
+        material: WHEAT
+        amount: 256
+        lore:
+          - Ripe, Hand-Picked
+      cocoa:
+        material: INK_SACK
+        amount: 128
+        durability: 3
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      cookie:
+        material: COOKIE
+        amount: 2048
+  bake_pie:
+    forceInclude: true
+    type: PRODUCTION
+    name: Bake Pumpkin Pie
+    production_time: 4s
+    input:
+      sugar:
+        material: SUGAR
+        amount: 192
+      egg:
+        material: EGG
+        amount: 192
+      pumpkin:
+        material: PUMPKIN
+        amount: 192
+    output:
+      pie:
+        material: PUMPKIN_PIE
+        amount: 256
+  bake_cake:
+    forceInclude: true
+    type: PRODUCTION
+    name: Bake Cake
+    production_time: 4s
+    input:
+      sugar:
+        material: SUGAR
+        amount: 24
+      egg:
+        material: EGG
+        amount: 8
+      pumpkin:
+        material: WHEAT
+        amount: 16
+        lore:
+          - Ripe, Hand-Picked
+    output:
+      pie:
+        material: CAKE
+        amount: 16
+
+  crack_fossil:
+    type: RANDOM
+    name: Crack Fossil
+    production_time: 1s
+    fuel_consumption_intervall: 99999s
+    input:
+      fossil:
+        material: PRISMARINE_SHARD
+        amount: 1
+        name: §3Fossil
+        lore:
+          - Crack me in a factory for a prize!
+    outputs:
+      gezo:
+        chance: 0.0000040909
+        gezo:
+          material: PAPER
+          amount: 1
+          lore:
+           - Gezo was here !!!
+      clockback:
+        chance: 0.0000040909
+        clockback:
+          material: WATCH
+          amount: 1
+          lore:
+           - Clockback
+          enchants:
+            kb:
+              enchant: KNOCKBACK
+              level: 3
+      apollo_bow:
+        chance: 0.0000040909
+        apollo_bow:
+          material: BOW
+          amount: 1
+          lore:
+           - Apollo's Bow
+          enchants:
+            power:
+              enchant: ARROW_DAMAGE
+              level: 5
+            ub:
+              enchant: DURABILITY
+              level: 3
+            flame:
+              enchant: ARROW_FIRE
+              level: 1
+            infinity:
+              enchant: ARROW_INFINITE
+              level: 1
+      imcando_pick:
+        chance: 0.0000040909
+        imcando_pick:
+          material: DIAMOND_PICKAXE
+          amount: 1
+          lore:
+           - Imcando Pickaxe
+          enchants:
+            efficiency:
+              enchant: DIG_SPEED
+              level: 5
+            ub:
+              enchant: DURABILITY
+              level: 3
+      power_5_book:
+        chance: 0.0000120909
+        power_5_book:
+          material: ENCHANTED_BOOK 
+          amount: 1
+          stored_enchants:
+            power5:
+              enchant: ARROW_DAMAGE
+              level: 5
+      infinity_book:
+        chance: 0.0000120909
+        infinity_book:
+          material: ENCHANTED_BOOK 
+          amount: 1
+          stored_enchants:
+            infinity:
+              enchant: ARROW_INFINITE
+              level: 1
+      efficiency_5_book:
+        chance: 0.0000120909
+        efficiency_5_book:
+          material: ENCHANTED_BOOK 
+          amount: 1
+          stored_enchants:
+            eff5:
+              enchant: DIG_SPEED
+              level: 5
+      unbreaking_3_book:
+        chance: 0.0000120909
+        unbreaking_3_book:
+          material: ENCHANTED_BOOK 
+          amount: 1
+          stored_enchants:
+            ub3:
+              enchant: DURABILITY
+              level: 3
+      sharpness_5_book:
+        chance: 0.0000120909
+        sharpness_5_book:
+          material: ENCHANTED_BOOK 
+          amount: 1
+          stored_enchants:
+            sharpness5:
+              enchant: DAMAGE_ALL
+              level: 5
+      protection_4_book:
+        chance: 0.0000120909
+        protection_4_book:
+          material: ENCHANTED_BOOK 
+          amount: 1
+          stored_enchants:
+            protection4:
+              enchant: PROTECTION_ENVIRONMENTAL
+              level: 4
+      silk_touch_book:
+        chance: 0.0000110909
+        silk_touch_book:
+          material: ENCHANTED_BOOK 
+          amount: 1
+          stored_enchants:
+            silktouch:
+              enchant: SILK_TOUCH
+              level: 1
+      diamond_horse_armor:
+        chance: 0.000037038
+        diamond_horse_armor:
+          material: DIAMOND_BARDING
+          amount: 1
+      bastion:
+        chance: 0.000037037
+        bastion:
+          material: SPONGE
+          name: Bastion
+          lore:
+           - This bastion will protect you from grief
+           - It will also block pearls when they land
+           - As well as stop elytra
+          amount: 1
+      diamond_pickaxe:
+        chance: 0.000037037
+        diamond_pickaxe:
+          material: DIAMOND_PICKAXE
+          amount: 1
+      diamond_axe:
+        chance: 0.000037037
+        diamond_axe:
+          material: DIAMOND_AXE
+          amount: 1
+      diamond_shovel:
+        chance: 0.000037037
+        diamond_shovel:
+          material: DIAMOND_SPADE
+          amount: 1
+      diamond_chestplate:
+        chance: 0.000037037
+        diamond_chestplate:
+          material: DIAMOND_CHESTPLATE
+          amount: 1
+      diamond_leggings:
+        chance: 0.000037037
+        diamond_leggings:
+          material: DIAMOND_LEGGINGS
+          amount: 1
+      diamond_helmet:
+        chance: 0.000037037
+        diamond_helmet:
+          material: DIAMOND_HELMET
+          amount: 1
+      diamond_boots:
+        chance: 0.000037037
+        diamond_boots:
+          material: DIAMOND_BOOTS
+          amount: 1
+      iron_ingots:
+        chance: 0.000037037
+        iron_ingots:
+          material: IRON_INGOT
+          amount: 64
+      diamond_block:
+        chance: 0.000037037
+        diamond_block:
+          material: DIAMOND_BLOCK
+          amount: 1
+      creeper:
+        chance: 0.000037037
+        creeper:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 50
+      zombie:
+        chance: 0.000037037
+        zombie:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 54
+      skeleton:
+        chance: 0.000037037
+        skeleton:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 51
+      spider:
+        chance: 0.000037037
+        spider:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 52
+      blaze:
+        chance: 0.000037037
+        blaze:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 61
+      ghast:
+        chance: 0.000037037
+        ghast:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 56
+      guardian:
+        chance: 0.000037037
+        guardian:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 68
+      magmacube:
+        chance: 0.000037037
+        magmacube:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 62
+      slime:
+        chance: 0.000037037
+        slime:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 55
+      witch:
+        chance: 0.000037037
+        witch:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 66
+      villager:
+        chance: 0.000037037
+        villager:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 120
+      cavespider:
+        chance: 0.000037037
+        cavespider:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 59
+      enderman:
+        chance: 0.000037037
+        enderman:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 58
+      zombiepigman:
+        chance: 0.000037037
+        zombiepigman:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 57
+      charcoal:
+        chance: 0.000037037
+        charcoal:
+          material: COAL
+          amount: 2048
+          durability: 1
+      beacon:
+        chance: 0.000037037
+        beacon:
+          material: BEACON
+          amount: 1
+      iron_pickaxe:
+        chance: 0.0029411764
+        iron_pickaxe:
+          material: IRON_PICKAXE
+          amount: 1
+      iron_spade:
+        chance: 0.00029411764
+        iron_spade:
+          material: IRON_SPADE
+          amount: 1
+      iron_axe:
+        chance: 0.00029411764
+        iron_axe:
+          material: IRON_AXE
+          amount: 1
+      iron_sword:
+        chance: 0.00029411764
+        iron_sword:
+          material: IRON_SWORD
+          amount: 1
+      note_blocks:
+        chance: 0.00029411764
+        note_blocks:
+          material: NOTE_BLOCK
+          amount: 5
+      diamond:
+        chance: 0.00029411764
+        diamond:
+          material: DIAMOND
+          amount: 1
+      emerald:
+        chance: 0.00029411764
+        emerald:
+          material: EMERALD
+          amount: 1
+      iron_block:
+        chance: 0.00029411764
+        iron_block:
+          material: IRON_BLOCK
+          amount: 1
+      redstone_block:
+        chance: 0.00029411764
+        redstone_block:
+          material: REDSTONE_BLOCK
+          amount: 1
+      lapis_block:
+        chance: 0.00029411764
+        lapis_block:
+          material: LAPIS_BLOCK
+          amount: 1
+      record_13:
+        chance: 0.000029411766
+        record_13:
+          material: GOLD_RECORD
+          amount: 1
+      record_cats:
+        chance: 0.000029411764
+        record_cats:
+          material: GREEN_RECORD
+          amount: 1
+      record_blocks:
+        chance: 0.000029411764
+        record_blocks:
+          material: RECORD_3
+          amount: 1
+      record_chirp:
+        chance: 0.000029411764
+        record_chirp:
+          material: RECORD_4
+          amount: 1
+      record_far:
+        chance: 0.000029411764
+        record_far:
+          material: RECORD_5
+          amount: 1
+      record_mall:
+        chance: 0.000029411764
+        record_mall:
+          material: RECORD_6
+          amount: 1
+      record_mellohi:
+        chance: 0.000029411764
+        record_mellohi:
+          material: RECORD_7
+          amount: 1
+      record_stal:
+        chance: 0.000029411764
+        record_stal:
+          material: RECORD_8
+          amount: 1
+      record_strad:
+        chance: 0.000029411764
+        record_strad:
+          material: RECORD_9
+          amount: 1
+      record_ward:
+        chance: 0.000029411764
+        record_ward:
+          material: RECORD_10
+          amount: 1
+      record_11:
+        chance: 0.000029411764
+        record_11:
+          material: RECORD_11
+          amount: 1
+      record_wait:
+        chance: 0.000029411764
+        record_wait:
+          material: RECORD_12
+          amount: 1
+      minecart:
+        chance: 0.00062352939
+        minecart:
+          material: MINECART
+          amount: 1
+      mooshroom:
+        chance: 0.00029411764
+        mooshroom:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 96
+      horse:
+        chance: 0.00029411764
+        horse:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 100
+      rabbit:
+        chance: 0.00029411764
+        rabbit:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 101
+      ocelot:
+        chance: 0.00029411764
+        ocelot:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 98
+      squid:
+        chance: 0.00029411764
+        squid:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 94
+      wolf:
+        chance: 0.00029411764
+        wolf:
+          material: MONSTER_EGG
+          amount: 1
+          durability: 95
+      iron_horse_armor:
+        chance: 0.00029411764
+        iron_horse_armor:
+          material: IRON_BARDING
+          amount: 1
+      bucket:
+        chance: 0.00029411764
+        bucket:
+          material: BUCKET
+          amount: 1
+      prismarine_shards:
+        chance: 0.00029411764
+        prismarine_shards:
+          material: PRISMARINE_SHARD
+          amount: 5
+      prismarine_crystals:
+        chance: 0.00029411788
+        prismarine_crystals:
+          material: PRISMARINE_CRYSTALS
+          amount: 3
+      jukebox:
+        chance: 0.00029411764
+        jukebox:
+          material: JUKEBOX
+          amount: 1
+      dirt:
+        chance: 0.9889
+        dirt:
+          material: DIRT
+          amount: 1
+          name: Dirt!
+
+
+          
+          
+          
+  make_iron_armor_sets:
+    production_time: 4s
+    name: Make Chain Armor Sets
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 48
+      qcap:
+        material: LEATHER_HELMET
+        name: "Quilted Cap"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 2
+      gambeson:
+        material: LEATHER_CHESTPLATE
+        name: "Gambeson"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 2
+      qpants:
+        material: LEATHER_LEGGINGS
+        name: "Quilted Trousers"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 2
+      boots:
+        material: LEATHER_BOOTS
+        amount: 2
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      iron_helm:
+        material: CHAINMAIL_HELMET
+        amount: 2
+        name: Chainmail Coif
+        lore:
+          - "Made of wrought iron"
+      iron_chest:
+        material: CHAINMAIL_CHESTPLATE
+        amount: 2
+        name: Chainmail Hauberk
+        lore:
+          - "Made of wrought iron"
+      mail_legs:
+        material: CHAINMAIL_LEGGINGS
+        amount: 2
+        lore:
+          - "Made of wrought iron"
+      iron_boots:
+        material: CHAINMAIL_BOOTS
+        amount: 2
+        name: Chainmail Boots
+        lore:
+          - "Made of wrought iron"
+  make_mail_coifs:
+    production_time: 4s
+    name: Make Mail Coifs
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 48
+      qcap:
+        material: LEATHER_HELMET
+        name: "Quilted Cap"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      iron_helm:
+        material: CHAINMAIL_HELMET
+        amount: 8
+        name: Chainmail Coif
+        lore:
+          - "Made of wrought iron"
+  make_mail_hauberks:
+    production_time: 4s
+    name: Make Mail Hauberks
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 48
+      gambeson:
+        material: LEATHER_CHESTPLATE
+        name: "Gambeson"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      iron_chest:
+        material: CHAINMAIL_CHESTPLATE
+        amount: 8
+        name: Chainmail Hauberk
+        lore:
+          - "Made of wrought iron"
+  make_mail_leggings:
+    production_time: 4s
+    name: Make Mail Leggings
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 48
+      qpants:
+        material: LEATHER_LEGGINGS
+        name: "Quilted Trousers"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      mail_legs:
+        material: CHAINMAIL_LEGGINGS
+        amount: 8
+        lore:
+          - "Made of wrought iron"
+  make_mail_boots:
+    production_time: 4s
+    name: Make Mail Boots
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 48
+      leather_boots:
+        material: LEATHER_BOOTS
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      iron_boots:
+        material: CHAINMAIL_BOOTS
+        amount: 8
+        name: Chainmail Boots
+        lore:
+          - "Made of wrought iron"
+  make_iron_axe:
+    production_time: 4s
+    name: Make Iron Axe
+    type: PRODUCTION
+    input:
+      iron: 
+        material: IRON_INGOT
+        amount: 16
+    output:
+      iron_axe:
+        material: IRON_AXE
+        amount: 16
+        lore:
+          - "Made of wrought iron"
+  make_iron_sword:
+    production_time: 4s
+    name: Make Iron Sword
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+    output:
+      iron_sword:
+        material: IRON_SWORD
+        amount: 16
+        lore:
+          - "Made of wrought iron"
+  make_iron_pick:
+    production_time: 4s
+    name: Make Iron Pick
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+    output:
+      iron_pick:
+        material: IRON_PICKAXE
+        amount: 16
+        lore:
+          - "Made of wrought iron"
+          - Mining Mode (/chisel to toggle)
+  make_iron_hoe:
+    production_time: 4s
+    name: Make Iron Hoe
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+    output:
+      iron_hoe:
+        material: IRON_HOE
+        amount: 16
+        lore:
+          - "Made of wrought iron"
+  make_iron_shovel:
+    production_time: 4s
+    name: Make Iron Shovel
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+    output:
+      iron_shovel:
+        material: IRON_SPADE
+        amount: 16
+        lore:
+          - "Made of wrought iron"
+  repair_iron_tools_factory:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 24
+    health_gained: 10000
+  repair_iron_armor_factory:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 32
+    health_gained: 10000
+  crush_coarse:
+    production_time: 4s
+    name: Crush Coarse Dirt
+    type: PRODUCTION
+    input:
+      coarse:
+        material: DIRT
+        durability: 1
+        amount: 64
+    output:
+      dirt:
+        material: DIRT
+        durability: 0
+        amount: 64
+  crush_lapis:
+    production_time: 4s
+    name: Crush and Combine Lapis Ore
+    type: PRODUCTION
+    input:
+      lapis_ore:
+        material: LAPIS_ORE
+        amount: 32
+    output:
+      lapis:
+        material: LAPIS_BLOCK
+        amount: 12
+      cobblestone:
+        material: COBBLESTONE
+        amount: 42
+  crush_redstone:
+    production_time: 4s
+    name: Crush and Combine Redstone Ore
+    type: PRODUCTION
+    input:
+      redstone_ore:
+        material: REDSTONE_ORE
+        amount: 32
+    output:
+      redstone:
+        material: REDSTONE_BLOCK
+        amount: 11
+      cobblestone:
+        material: COBBLESTONE
+        amount: 53
+  crush_gold_ore:
+    production_time: 4s
+    name: Crush and Combine Gold Ore
+    type: PRODUCTION
+    input:
+      gold_ore:
+        material: GOLD_ORE
+        amount: 32
+    output:
+      gold:
+        material: GOLD_BLOCK
+        amount: 5
+      cobblestone:
+        material: COBBLESTONE
+        amount: 59
+  crush_stone:
+    production_time: 4s
+    name: Crush Stone
+    type: PRODUCTION
+    input:
+      stone:
+        material: STONE
+        amount: 32
+    output:
+      cobblestone:
+        material: COBBLESTONE
+        amount: 32
+  crush_cobble:
+    production_time: 4s
+    name: Crush Cobblestone
+    type: PRODUCTION
+    input:
+      cobble:
+        material: COBBLESTONE
+        amount: 32
+    output:
+      gravel:
+        material: GRAVEL
+        amount: 32
+  crush_gravel:
+    production_time: 4s
+    name: Crush Gravel
+    type: PRODUCTION
+    input:
+      gravel:
+        material: GRAVEL
+        amount: 32
+    output:
+      sand:
+        material: SAND
+        amount: 32
+  crush_glowstone:
+    production_time: 4s
+    name: Crush Glowstone into Sulfur
+    type: PRODUCTION
+    input:
+      glowstone:
+        material: GLOWSTONE
+        amount: 32
+    output:
+      glowdust:
+        material: GLOWSTONE_DUST
+        amount: 128
+        name: Sulfur
+  grind_bones:
+    production_time: 4s
+    name: Grind Bones
+    type: PRODUCTION
+    input:
+      bone:
+        material: BONE
+        amount: 32
+    output:
+      bonemeal:
+        material: INK_SACK
+        amount: 128
+        durability: 15
+  grind_roses:
+    production_time: 4s
+    name: Grind Roses
+    type: PRODUCTION
+    input:
+      poppy:
+        material: RED_ROSE
+        amount: 64
+    output:
+      rosered:
+        material: INK_SACK
+        amount: 128
+        durability: 1
+  grind_dandelions:
+    production_time: 4s
+    name: Grind Dandelions
+    type: PRODUCTION
+    input:
+      dandelion:
+        material: YELLOW_FLOWER
+        amount: 64
+    output:
+      dandelionyellow:
+        material: INK_SACK
+        amount: 128
+        durability: 11
+  sift_gravel:
+    production_time: 4s
+    name: Sift Gravel
+    type: PRODUCTION
+    input:
+      gravel:
+        material: GRAVEL
+        amount: 64
+    output:
+      flint:
+        material: FLINT
+        amount: 64
+  grind_sandstone:
+    production_time: 4s
+    name: Grind Sandstone
+    type: PRODUCTION
+    input:
+      sandstone:
+        material: SANDSTONE
+        amount: 64
+    output:
+      sand:
+        material: SAND
+        amount: 64
+        durability: 0
+  grind_red_sandstone:
+    production_time: 4s
+    name: Grind Red Sandstone
+    type: PRODUCTION
+    input:
+      red sandstone:
+        material: RED_SANDSTONE
+        amount: 64
+    output:
+      red sand:
+        material: SAND
+        amount: 64
+        durability: 1
+  make_torch:
+    production_time: 4s
+    name: Make Redstone Torches
+    type: PRODUCTION
+    input:
+      stick:
+        material: STICK
+        amount: 64
+      redstone:
+        material: REDSTONE
+        amount: 64
+    output:
+      redstone_torch:
+        material: REDSTONE_TORCH_ON
+        amount: 128
+  make_droppers:
+    production_time: 4s
+    name: Make Droppers
+    type: PRODUCTION
+    input:
+      stone:
+        material: STONE
+        amount: 64
+      redstone:
+        material: REDSTONE
+        amount: 8
+    output:
+      droppers:
+        material: DROPPER
+        amount: 8
+  make_dispensers:
+    production_time: 4s
+    name: Make Dispensers
+    type: PRODUCTION
+    input:
+      stone:
+        material: STONE
+        amount: 64
+      redstone:
+        material: REDSTONE
+        amount: 8
+      bow:
+        material: BOW
+        amount: 8
+    output:
+      droppers:
+        material: DISPENSER
+        amount: 8
+  make_observers:
+    production_time: 4s
+    name: Make Observers
+    type: PRODUCTION
+    input:
+      stone:
+        material: STONE
+        amount: 64
+      redstone:
+        material: REDSTONE
+        amount: 16
+      quartz:
+        material: QUARTZ_BLOCK
+        amount: 8
+    output:
+      droppers:
+        material: OBSERVER
+        amount: 8
+  make_noteblocks:
+    production_time: 4s
+    name: Make Noteblocks
+    type: PRODUCTION
+    input:
+      wood:
+        material: WOOD
+        amount: 64
+      lapis:
+        material: INK_SACK
+        durability: 4
+        amount: 8
+    output:
+      droppers:
+        material: NOTE_BLOCK
+        amount: 12
+  make_jukes:
+    production_time: 4s
+    name: Make Jukeboxes
+    type: PRODUCTION
+    input:
+      wood:
+        material: WOOD
+        amount: 64
+      diamond:
+        material: LAPIS_BLOCK
+        amount: 8
+    output:
+      droppers:
+        material: JUKEBOX
+        amount: 12
+  make_sensors:
+    production_time: 4s
+    name: Make Daylight Sensors
+    type: PRODUCTION
+    input:
+      stone:
+        material: WOOD
+        amount: 32
+      quartz:
+        material: QUARTZ_BLOCK
+        amount: 32
+      glass:
+        material: GLASS
+        amount: 32
+    output:
+      droppers:
+        material: DAYLIGHT_DETECTOR
+        amount: 8
+  make_pistons:
+    production_time: 4s
+    name: Make Pistons
+    type: PRODUCTION
+    input:
+      stone:
+        material: WOOD
+        amount: 64
+      quartz:
+        material: REDSTONE
+        amount: 8
+      glass:
+        material: IRON_INGOT
+        amount: 8
+    output:
+      droppers:
+        material: PISTON_BASE
+        amount: 8
+  make_clocks:
+    production_time: 4s
+    name: Make Clocks
+    type: PRODUCTION
+    input:
+      gold:
+        material: GOLD_BLOCK
+        amount: 4
+      redstone:
+        material: REDSTONE
+        amount: 8
+    output:
+      clocks:
+        material: WATCH
+        amount: 8
+  make_compass:
+    production_time: 4s
+    name: Make Compasses
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 32
+      redstone:
+        material: REDSTONE
+        amount: 8
+    output:
+      clocks:
+        material: COMPASS
+        amount: 8
+  make_comparator:
+    production_time: 4s
+    name: Make Comparators
+    type: PRODUCTION
+    input:
+      redstone:
+        material: REDSTONE
+        amount: 32
+      stone:
+        material: STONE
+        amount: 128
+      quartz:
+        material: QUARTZ_BLOCK
+    output:
+      comparator:
+        material: REDSTONE_COMPARATOR
+        amount: 32
+  make_repeater:
+    production_time: 4s
+    name: Make Repeaters
+    type: PRODUCTION
+    input:
+      redstone:
+        material: REDSTONE
+        amount: 128
+      stone:
+        material: STONE
+        amount: 128
+    output:
+      repeater:
+        material: DIODE
+        amount: 96
+  compact:
+    production_time: 1s
+    fuel_consumption_intervall: 99999s
+    name: Compact
+    type: COMPACT
+    input:
+      crate:
+        material: CHEST
+        lore:
+          - Crate
+    compact_lore: Compacted Item
+    excluded_materials:
+      - BOOK
+  decompact:
+    production_time: 1s
+    fuel_consumption_intervall: 99999s
+    name: Decompact
+    type: DECOMPACT
+    input:
+    compact_lore: Compacted Item
+  bind_books:
+    type: PRODUCTION
+    name: Bind Books
+    production_time: 4s
+    input:
+      paper:
+        material: PAPER
+        amount: 18
+      leather:
+        material: LEATHER
+        amount: 6
+    output:
+      books:
+        material: BOOK
+        amount: 12
+  bind_writable_books:
+    type: PRODUCTION
+    name: Bind Writeable Books
+    production_time: 4s
+    input:
+      paper:
+        material: PAPER
+        amount: 18
+      leather:
+        material: LEATHER
+        amount: 6
+      ink:
+        material: INK_SACK
+        amount: 6
+      feather:
+        material: FEATHER
+        amount: 6
+    output:
+      books:
+        material: BOOK_AND_QUILL
+        amount: 12
+  make_map:
+    type: PRODUCTION
+    name: Make Map
+    production_time: 4s
+    input:
+      paper:
+        material: PAPER
+        amount: 18
+      ink:
+        material: INK_SACK
+        amount: 6
+      feather:
+        material: FEATHER
+        amount: 6
+    output:
+      books:
+        material: MAP
+        amount: 6
+  make_painting:
+    type: PRODUCTION
+    name: Make Paintings
+    production_time: 4s
+    input:
+      cloth:
+        material: PAPER
+        amount: 16
+        name: Woven Cloth
+        lore:
+          - "Suitable for use as sailcloth"
+      color1:
+        material: INK_SACK
+        amount: 4
+      color2:
+        material: INK_SACK
+        amount: 4
+        durability: 1
+      color3:
+        material: INK_SACK
+        amount: 4
+        durability: 4
+      color4:
+        material: INK_SACK
+        amount: 4
+        durability: 2
+      color5:
+        material: INK_SACK
+        amount: 4
+        durability: 15
+      feather:
+        material: FEATHER
+        amount: 4
+      sticks:
+        material: STICK
+        amount: 16
+    output:
+      books:
+        material: PAINTING
+        amount: 4
+  craft_printing_plate:
+    type: PRINTINGPLATE
+    name: Craft Printing Plate
+    production_time: 4s
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 1
+    output:
+      plate:
+        material: TRAP_DOOR
+        amount: 1
+  print_book:
+    type: PRINTBOOK
+    name: Print Book
+    production_time: 4s
+    outputamount: 6
+    input:
+      paper:
+        material: PAPER
+        amount: 18
+      ink:
+        material: INK_SACK
+        amount: 1
+    printingplate:
+      plate:
+        material: TRAP_DOOR
+        amount: 1
+  print_note:
+    type: PRINTNOTE
+    name: Print Note
+    production_time: 4s
+    securenote: false
+    title: Pamphlet
+    outputamount: 3
+    input:
+      paper:
+        material: PAPER
+        amount: 5
+    printingplate:
+      plate:
+        material: TRAP_DOOR
+        amount: 1
+  print_secure_note:
+    type: PRINTNOTE
+    name: Print Secure Note
+    production_time: 4s
+    securenote: true
+    title: Secure Note
+    outputamount: 3
+    input:
+      paper:
+        material: PAPER
+        amount: 5
+    printingplate:
+      plate:
+        material: TRAP_DOOR
+        amount: 1
+  repair_printer:
+    forceInclude: true
+    type: REPAIR
+    name: Repair Printer
+    production_time: 4s
+    input:
+      ink:
+        material: INK_SACK
+        amount: 3
+      paper:
+        material: PAPER
+        amount: 6
+    health_gained: 10000
+  repair_compactor:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 5
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    health_gained: 10000
+  repair_redstone:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 6
+      redstone:
+        material: REDSTONE
+        amount: 25
+      gold:
+        material: GOLD_BLOCK
+        amount: 1
+    health_gained: 10000
+  repair_grinding_mill:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      stone:
+        material: STONE
+        amount: 128
+      leather:
+        material: LEATHER
+        amount: 8
+    health_gained: 10000
+  
+  make_nametags:
+    production_time: 4s
+    name: Make Nametags
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+    output:
+      plate:
+        material: NAME_TAG
+        amount: 8
+  make_iron_pressure:
+    production_time: 4s
+    name: Make Iron Pressure Plates
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+    output:
+      plate:
+        material: IRON_PLATE
+        amount: 8
+  make_gold_pressure:
+    production_time: 4s
+    name: Make Gold Pressure Plates
+    type: PRODUCTION
+    input:
+      iron:
+        material: GOLD_BLOCK
+        amount: 2
+    output:
+      plate:
+        material: GOLD_PLATE
+        amount: 8
+  make_hopper:
+    production_time: 4s
+    name: Make Hoppers
+    type: PRODUCTION
+    input:
+      chests:
+        material: WOOD
+        amount: 256
+        durability: -1
+      iron:
+        material: IRON_INGOT
+        amount: 192
+    output:
+      hopper:
+        material: HOPPER
+        amount: 64
+  make_rail:
+    production_time: 4s
+    name: Make Rails
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 128
+      steel:
+        material: IRON_INGOT
+        amount: 16
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      stick:
+        material: STICK
+        amount: 128
+    output:
+      rails:
+        material: RAILS
+        amount: 512
+  make_powered_rail:
+    production_time: 4s
+    name: Make Powered Rails
+    type: PRODUCTION
+    input:
+      gold:
+        material: GOLD_BLOCK
+        amount: 4
+      iron:
+        material: IRON_INGOT
+        amount: 32
+      steel:
+        material: IRON_INGOT
+        amount: 4
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      redstone:
+        material: REDSTONE
+        amount: 8
+    output:
+      powered_rail:
+        material: POWERED_RAIL
+        amount: 128
+  make_detector_rail:
+    production_time: 4s
+    name: Make Detector Rails
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 18
+      steel:
+        material: IRON_INGOT
+        amount: 2
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      redstone:
+        material: REDSTONE
+        amount: 2
+    output:
+      detector_rail:
+        material: DETECTOR_RAIL
+        amount: 32
+  make_activator_rail:
+    production_time: 4s
+    name: Make Activator Rails
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 18
+      steel:
+        material: IRON_INGOT
+        amount: 2
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      redstone:
+        material: REDSTONE
+        amount: 2
+    output:
+      detector_rail:
+        material: ACTIVATOR_RAIL
+        amount: 32
+  make_minecart:
+    production_time: 4s
+    name: Make Minecarts
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 64
+    output:
+      minecart:
+        material: MINECART
+        amount: 27
+  repair_rails:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 8
+      steel:
+        material: IRON_INGOT
+        amount: 1
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    health_gained: 10000
+  make_iron_fence:
+    production_time: 4s
+    name: Make Iron Bars
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 24
+    output:
+      iron_bars:
+        material: IRON_FENCE
+        amount: 256
+  make_anvil:
+    production_time: 4s
+    name: Make Anvils
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 256
+      steel:
+        material: IRON_INGOT
+        amount: 16
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    output:
+      anvil:
+        material: ANVIL
+        amount: 16
+  make_bucket:
+    production_time: 4s
+    name: Make Buckets
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 96
+    output:
+      bucket:
+        material: BUCKET
+        amount: 64
+  make_iron_trapdoor:
+    production_time: 4s
+    name: Make Iron Trapdoors
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 48
+    output:
+      iron_trapdoor:
+        material: IRON_TRAPDOOR
+        amount: 16
+  make_iron_door:
+    production_time: 4s
+    name: Make Iron Doors
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 24
+    output:
+      iron_door:
+        material: IRON_DOOR
+        amount: 18
+  make_tripwire:
+    production_time: 4s
+    name: Make Tripwire Hooks
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+    output:
+      tripwire_hook:
+        material: TRIPWIRE_HOOK
+        amount: 64
+  make_shears:
+    production_time: 4s
+    name: Make Shears
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+    output:
+      shears:
+        material: SHEARS
+        amount: 16
+  make_cauldrons:
+    production_time: 4s
+    name: Make Cauldrons
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 14
+    output:
+      cauldron:
+        material: CAULDRON_ITEM
+        amount: 4
+  forge_iron_block:
+    production_time: 1s
+    name: Forge Iron Block
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 9
+    output:
+      iron_block:
+        material: IRON_BLOCK
+        amount: 1
+  forge_iron_ingot:
+    production_time: 1s
+    name: Forge Iron Ingot
+    type: PRODUCTION
+    input:
+      iron_nugget:
+        material: IRON_NUGGET
+        amount: 9
+    output:
+      iron:
+        material: IRON_INGOT
+        amount: 1
+  split_iron_blocks:
+    production_time: 4s
+    name: Split Iron Blocks
+    type: PRODUCTION
+    input:
+      gold_block:
+        material: IRON_BLOCK
+        amount: 16
+    output:
+      gold:
+        material: IRON_INGOT
+        amount: 144
+  split_iron_ingots:
+    production_time: 4s
+    name: Split Iron Ingots
+    type: PRODUCTION
+    input:
+      gold_block:
+        material: IRON_INGOT
+        amount: 16
+    output:
+      gold:
+        material: IRON_NUGGET
+        amount: 144
+  repair_forge:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 12
+    health_gained: 10000
+  refine_steel:
+    production_time: 4s
+    name: Carburize Iron into Steel
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 6
+      straw:
+        material: WHEAT
+        amount: 12
+        lore:
+          - Ripe, Hand-Picked
+      clay:
+        material: CLAY
+        amount: 2
+    output:
+      steel:
+        material: IRON_INGOT
+        amount: 1
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+  make_mithril_horse_armor:
+    production_time: 4s
+    name: Make Mithril Horse Armor
+    type: PRODUCTION
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 24
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+      wool:
+        material: WOOL
+        amount: 32
+      leather:
+        material: LEATHER
+        amount: 4
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 2
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      mithril_horse:
+        material: DIAMOND_BARDING
+        amount: 1
+        name: Mithril Horse Armor
+        lore:
+          - Made from laminated sheets of mithril
+  make_mithril_armor_sets:
+    production_time: 4s
+    name: Make Mithril Armor Sets
+    type: PRODUCTION
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 48
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+      qcap:
+        material: LEATHER_HELMET
+        name: "Quilted Cap"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 2
+      gambeson:
+        material: LEATHER_CHESTPLATE
+        name: "Gambeson"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 2
+      qpants:
+        material: LEATHER_LEGGINGS
+        name: "Quilted Trousers"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 2
+      boots:
+        material: LEATHER_BOOTS
+        amount: 2
+      leather:
+        material: LEATHER
+        amount: 4
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      mithril_helm:
+        material: DIAMOND_HELMET
+        amount: 2
+        name: Mithril Helmet
+        lore:
+          - Made from laminated sheets of mithril
+          - No Owner
+      mithril_chest:
+        material: DIAMOND_CHESTPLATE
+        amount: 2
+        name: Mithril Chestplate
+        lore:
+          - Made from laminated sheets of mithril
+          - No Owner
+      diamond_legs:
+        material: DIAMOND_LEGGINGS
+        amount: 2
+        name: Mithril Leg Armor
+        lore:
+          - Made from laminated sheets of mithril
+          - No Owner
+      mithril_boots:
+        material: DIAMOND_BOOTS
+        amount: 2
+        name: Mithril Plated Boots
+        lore:
+          - Made from laminated sheets of mithril
+          - No Owner
+  make_mithril_helm:
+    production_time: 4s
+    name: Make Mithril Helmets
+    type: PRODUCTION
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 48
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+      qcap:
+        material: LEATHER_HELMET
+        name: "Quilted Cap"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      mithril_helm:
+        material: DIAMOND_HELMET
+        amount: 8
+        name: Mithril Helmet
+        lore:
+          - Made from laminated sheets of mithril
+          - No Owner
+  make_mithril_chest:
+    production_time: 4s
+    name: Make Mithril Chestplates
+    type: PRODUCTION
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 48
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+      gambeson:
+        material: LEATHER_CHESTPLATE
+        name: "Gambeson"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 8
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      mithril_chest:
+        material: DIAMOND_CHESTPLATE
+        amount: 8
+        name: Mithril Chestplate
+        lore:
+          - Made from laminated sheets of mithril
+          - No Owner
+  make_mithril_legs:
+    production_time: 4s
+    name: Make Mithril Leggings
+    type: PRODUCTION
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 48
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+      qpants:
+        material: LEATHER_LEGGINGS
+        name: "Quilted Trousers"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      diamond_legs:
+        material: DIAMOND_LEGGINGS
+        amount: 8
+        name: Mithril Leg Armor
+        lore:
+          - Made from laminated sheets of mithril
+          - No Owner
+  make_mithril_boots:
+    production_time: 4s
+    name: Make Mithril Boots
+    type: PRODUCTION
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 48
+        name: Mithril Sheet
+        lore:
+          - An incredibly tough, flexible material woven from chemically altered diamonds
+      qcap:
+        material: LEATHER_BOOTS
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 8
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      mithril_boots:
+        material: DIAMOND_BOOTS
+        amount: 8
+        name: Mithril Plated Boots
+        lore:
+          - Made from laminated sheets of mithril
+          - No Owner
+  make_mithril_axe:
+    production_time: 4s
+    name: Make mithril Axes
+    type: PRODUCTION
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 16
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 16
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      mithril_axe:
+        material: DIAMOND_AXE
+        amount: 16
+        name: Mithril Axe
+        lore:
+          - Made from laminated sheets of mithril
+  make_mithril_sword:
+    production_time: 4s
+    name: Make Mithril Swords
+    type: PRODUCTION
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 16
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 16
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      mithril_sword:
+        material: DIAMOND_SWORD
+        amount: 16
+        name: Mithril Sword
+        lore:
+          - Made from laminated sheets of mithril
+  make_mithril_pick:
+    production_time: 4s
+    name: Make Mithril Picks
+    type: PRODUCTION
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 16
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 16
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      mithril_pick:
+        material: DIAMOND_PICKAXE
+        amount: 16
+        name: Mithril Pickaxe
+        lore:
+          - Made from laminated sheets of mithril
+          - Mining Mode (/chisel to toggle)
+  make_mithril_hoe:
+    production_time: 4s
+    name: Make Mithril Hoes
+    type: PRODUCTION
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 16
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 16
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      mithril_hoe:
+        material: DIAMOND_HOE
+        amount: 16
+        name: Mithril Hoe
+        lore:
+          - Made from laminated sheets of mithril
+  make_mithril_shovel:
+    production_time: 4s
+    name: Make Mithril Shovels
+    type: PRODUCTION
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 16
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+      golden_apple:
+        material: GOLDEN_APPLE
+        durability: 1
+        name: Stamina
+        amount: 16
+        lore:
+          - "Prolonged physical"
+          - "or mental effort"
+    output:
+      mithril_shovel:
+        material: DIAMOND_SPADE
+        amount: 16
+        name: Mithril Shovel
+        lore:
+          - Made from laminated sheets of mithril
+  repair_mithril_armor_factory:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 32
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+    health_gained: 10000
+  repair_mithril_tool_factory:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 32
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+    health_gained: 10000
+  13:
+    production_time: 4s
+    name: Make a 13 record
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 164
+        name: Sulfur
+      coal:
+        material: COAL
+        amount: 128
+      tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - :(
+    output:
+      record:
+        material: GOLD_RECORD
+        amount: 1
+  cat:
+    production_time: 4s
+    name: Make a cat record
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 164
+        name: Sulfur
+      coal:
+        material: COAL
+        amount: 128
+      tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - :(
+    output:
+      record:
+        material: GREEN_RECORD
+        amount: 1
+  blocks:
+    production_time: 4s
+    name: Make a blocks record
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 164
+        name: Sulfur
+      coal:
+        material: COAL
+        amount: 128
+      tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - :(
+    output:
+      record:
+        material: RECORD_3
+        amount: 1
+  chirp:
+    production_time: 4s
+    name: Make a chirp record
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 164
+        name: Sulfur
+      coal:
+        material: COAL
+        amount: 128
+      tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - :(
+    output:
+      record:
+        material: RECORD_4
+        amount: 1
+  far:
+    production_time: 4s
+    name: Make a far record
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 164
+        name: Sulfur
+      coal:
+        material: COAL
+        amount: 128
+      tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - :(
+    output:
+      record:
+        material: RECORD_5
+        amount: 1
+  mall:
+    production_time: 4s
+    name: Make a mall record
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 164
+        name: Sulfur
+      coal:
+        material: COAL
+        amount: 128
+      tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - :(
+    output:
+      record:
+        material: RECORD_6
+        amount: 1
+  mellohi:
+    production_time: 4s
+    name: Make a mellohi record
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 164
+        name: Sulfur
+      coal:
+        material: COAL
+        amount: 128
+      tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - :(
+    output:
+      record:
+        material: RECORD_7
+        amount: 1
+  stal:
+    production_time: 4s
+    name: Make a stal record
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 164
+        name: Sulfur
+      coal:
+        material: COAL
+        amount: 128
+      tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - :(
+    output:
+      record:
+        material: RECORD_8
+        amount: 1
+  strad:
+    production_time: 4s
+    name: Make a strad record
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 164
+        name: Sulfur
+      coal:
+        material: COAL
+        amount: 128
+      tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - :(
+    output:
+      record:
+        material: RECORD_9
+        amount: 1
+  ward:
+    production_time: 4s
+    name: Make a ward record
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 164
+        name: Sulfur
+      coal:
+        material: COAL
+        amount: 128
+      tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - :(
+    output:
+      record:
+        material: RECORD_10
+        amount: 1
+  11:
+    production_time: 4s
+    name: Make an 11 record
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 164
+        name: Sulfur
+      coal:
+        material: COAL
+        amount: 128
+      tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - :(
+    output:
+      record:
+        material: RECORD_11
+        amount: 1
+  wait:
+    production_time: 4s
+    name: Make a wait record
+    type: PRODUCTION
+    input:
+      sulfur:
+        material: GLOWSTONE_DUST
+        amount: 164
+        name: Sulfur
+      coal:
+        material: COAL
+        amount: 128
+      tears:
+        material: WATER_BUCKET
+        amount: 4
+        name: Doxxer Tears
+        lore:
+          - :(
+    output:
+      record:
+        material: RECORD_12
+        amount: 1
+  make_steel_armor_sets:
+    production_time: 4s
+    name: Make Steel Armor Sets
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 48
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      qcap:
+        material: LEATHER_HELMET
+        name: "Quilted Cap"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 2
+      gambeson:
+        material: LEATHER_CHESTPLATE
+        name: "Gambeson"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 2
+      qpants:
+        material: LEATHER_LEGGINGS
+        name: "Quilted Trousers"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 2
+      boots:
+        material: LEATHER_BOOTS
+        amount: 2
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      steel_helm:
+        material: IRON_HELMET
+        amount: 2
+        name: Steel Helmet
+        lore: 
+          - Made of tempered steel
+          - No Owner
+        enchants:
+          dur:
+            enchant: DURABILITY
+            level: 2
+      steel_chest:
+        material: IRON_CHESTPLATE
+        amount: 2
+        name: Steel Chestplate
+        lore: 
+          - Made of tempered steel
+          - No Owner
+        enchants:
+          dur:
+            enchant: DURABILITY
+            level: 2
+      steel_legs:
+        material: IRON_LEGGINGS
+        amount: 2
+        name: Steel Leg Armor
+        lore: 
+          - Made of tempered steel
+          - No Owner
+        enchants:
+          dur:
+            enchant: DURABILITY
+            level: 2
+      steel_boots:
+        material: IRON_BOOTS
+        amount: 2
+        name: Steel Boots
+        lore: 
+          - Made of tempered steel
+          - No Owner
+        enchants:
+          dur:
+            enchant: DURABILITY
+            level: 2
+  make_steel_horse_armor:
+    production_time: 4s
+    name: Make Steel Horse Armor
+    type: PRODUCTION
+    input:
+      steel:
+        material: IRON_INGOT
+        amount: 24
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      sand:
+        material: SAND
+        amount: 32
+      wool:
+        material: WOOL
+        amount: 32
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      steel_horse:
+        material: IRON_BARDING
+        amount: 1
+        name: Steel Horse Armor
+        lore:
+          - Made of tempered steel
+        enchants:
+          dur:
+            enchant: DURABILITY
+            level: 2
+  make_steel_helm:
+    production_time: 4s
+    name: Make Steel Helmets
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 48
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      qcap:
+        material: LEATHER_HELMET
+        name: "Quilted Cap"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      steel_helm:
+        material: IRON_HELMET
+        amount: 8
+        name: Steel Helmet
+        lore: 
+          - Made of tempered steel
+          - No Owner
+        enchants:
+          dur:
+            enchant: DURABILITY
+            level: 2
+  make_steel_chest:
+    production_time: 4s
+    name: Make Steel Chestplates
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 48
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      gambeson:
+        material: LEATHER_CHESTPLATE
+        name: "Gambeson"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      steel_chest:
+        material: IRON_CHESTPLATE
+        amount: 8
+        name: Steel Chestplate
+        lore: 
+          - Made of tempered steel
+          - No Owner
+        enchants:
+          dur:
+            enchant: DURABILITY
+            level: 2
+  make_steel_legs:
+    production_time: 4s
+    name: Make Steel Leggings
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 48
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      qpants:
+        material: LEATHER_LEGGINGS
+        name: "Quilted Trousers"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      steel_legs:
+        material: IRON_LEGGINGS
+        amount: 8
+        name: Steel Leg Armor
+        lore: 
+          - Made of tempered steel
+          - No Owner
+        enchants:
+          dur:
+            enchant: DURABILITY
+            level: 2
+  make_steel_boots:
+    production_time: 4s
+    name: Make Steel Boots
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 48
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+      leather_boots:
+        material: LEATHER_BOOTS
+        amount: 8
+      leather:
+        material: LEATHER
+        amount: 4
+    output:
+      steel_boots:
+        material: IRON_BOOTS
+        amount: 8
+        name: Steel Boots
+        lore: 
+          - Made of tempered steel
+          - No Owner
+        enchants:
+          dur:
+            enchant: DURABILITY
+            level: 2
+  make_steel_axe:
+    production_time: 4s
+    name: Make Steel Axe
+    type: PRODUCTION
+    input:
+      iron: 
+        material: IRON_INGOT
+        amount: 16
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    output:
+      steel_axe:
+        material: IRON_AXE
+        amount: 16
+        name: Steel Axe
+        lore: 
+          - Made of tempered steel
+        enchants:
+          eff2:
+            enchant: DIG_SPEED
+            level: 2
+          dur:
+            enchant: DURABILITY
+            level: 2
+  make_steel_sword:
+    production_time: 4s
+    name: Make Steel Sword
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    output:
+      steel_sword:
+        material: IRON_SWORD
+        amount: 16
+        name: Steel Sword
+        lore: 
+          - Made of tempered steel
+        enchants:
+          dur:
+            enchant: DURABILITY
+            level: 2
+  make_steel_pick:
+    production_time: 4s
+    name: Make Steel Pick
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    output:
+      steel_pick:
+        material: IRON_PICKAXE
+        amount: 16
+        name: Steel Pick
+        lore:
+          - Made of tempered steel
+          - Mining Mode (/chisel to toggle)
+        enchants:
+          eff2:
+            enchant: DIG_SPEED
+            level: 2
+          dur:
+            enchant: DURABILITY
+            level: 2
+  make_steel_shovel:
+    production_time: 4s
+    name: Make Steel Shovel
+    type: PRODUCTION
+    input:
+      steel:
+        material: IRON_INGOT
+        amount: 16
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    output:
+      steel_shovel:
+        material: IRON_SPADE
+        amount: 16
+        name: Steel Shovel
+        lore: 
+          - Made of tempered steel
+        enchants:
+          eff2:
+            enchant: DIG_SPEED
+            level: 2
+          dur:
+            enchant: DURABILITY
+            level: 2
+  make_steel_hoe:
+    production_time: 4s
+    name: Make Steel Hoe
+    type: PRODUCTION
+    input:
+      iron:
+        material: IRON_INGOT
+        amount: 16
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    output:
+      steel_hoe:
+        material: IRON_HOE
+        amount: 16
+        name: Steel Hoe
+        lore: 
+          - Made of tempered steel
+        enchants:
+          eff2:
+            enchant: DIG_SPEED
+            level: 
+          dur:
+            enchant: DURABILITY
+            level: 2
+  repair_steel_tools_factory:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      steel:
+        material: IRON_INGOT
+        amount: 12
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    health_gained: 10000
+  repair_steel_armor_factory:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      steel:
+        material: IRON_INGOT
+        amount: 18
+        name: Steel Ingot
+        lore:
+          - An alloy of carbon and iron
+    health_gained: 10000
+###############################
+  make_string:
+    production_time: 4s
+    name: Make String
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 10
+    output:
+      string:
+        material: STRING
+        amount: 64
+  make_cobweb:
+    production_time: 4s
+    name: Make Cobwebs
+    type: PRODUCTION
+    input:
+      string:
+        material: STRING
+        amount: 576
+    output:
+      web:
+        material: WEB
+        amount: 64
+  make_wool:
+    production_time: 4s
+    name: Make Wool
+    type: PRODUCTION
+    input:
+      string:
+        material: STRING
+        amount: 64
+    output:
+      wool:
+        material: WOOL
+        amount: 8
+  make_carpet:
+    production_time: 4s
+    name: Make Carpet
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 10
+    output:
+      carpet:
+        material: CARPET
+        amount: 15
+  make_bed:
+    production_time: 4s
+    name: Make Bed
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 6
+      wood:
+        material: WOOD
+        amount: 12
+    output:
+      string:
+        material: BED
+        amount: 4
+  make_boots:
+    production_time: 4s
+    name: Make Leather Boots
+    type: PRODUCTION
+    input:
+      leather:
+        material: LEATHER
+        amount: 10
+    output:
+      leather_boots:
+        material: LEATHER_BOOTS
+        amount: 5
+  make_woven_cloth:
+    production_time: 4s
+    name: Weave Sailcloth
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+    output:
+      cloth:
+        material: PAPER
+        amount: 4
+        name: Woven Cloth
+        lore:
+          - "Suitable for use as sailcloth"
+  make_quilted_armor:
+    production_time: 4s
+    name: Make Quilted Armor
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+      leather:
+        material: LEATHER
+        amount: 3
+    output:
+      gambeson:
+        material: LEATHER_CHESTPLATE
+        name: "Gambeson"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 1
+      qpants:
+        material: LEATHER_LEGGINGS
+        name: "Quilted Trousers"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 1
+      qcap:
+        material: LEATHER_HELMET
+        name: "Quilted Cap"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 1
+  make_quilted_helmets:
+    production_time: 4s
+    name: Make Quilted Caps
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+      leather:
+        material: LEATHER
+        amount: 3
+    output:
+      qcap:
+        material: LEATHER_HELMET
+        name: "Quilted Cap"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 3
+  make_gambesons:
+    production_time: 4s
+    name: Make Gambesons
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+      leather:
+        material: LEATHER
+        amount: 3
+    output:
+      gambeson:
+        material: LEATHER_CHESTPLATE
+        name: "Gambeson"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 3
+  make_quilted_leggings:
+    production_time: 4s
+    name: Make Quilted Trousers
+    type: PRODUCTION
+    input:
+      wool:
+        material: WOOL
+        amount: 64
+      leather:
+        material: LEATHER
+        amount: 3
+    output:
+      qpants:
+        material: LEATHER_LEGGINGS
+        name: "Quilted Trousers"
+        color: A89987
+        lore:
+          - "Made from layers of thick wool"
+        amount: 3
+  weave_mithril_sheet:
+    production_time: 4s
+    name: Weave Mithril Sheets
+    type: PRODUCTION
+    input:
+      mithril_strands:
+        material: STRING
+        amount: 16
+        name: Mithril Strands
+        lore:
+          - "A spool of fibers spun from chemically altered diamonds"
+    output:
+      mithril:
+        material: PRISMARINE_SHARD
+        amount: 16
+        name: Mithril Sheet
+        lore:
+          - "An incredibly tough, flexible material woven from chemically altered diamonds"
+  make_saddle:
+    production_time: 4s
+    name: Make Saddles
+    type: PRODUCTION
+    input:
+      leather:
+        material: LEATHER
+        amount: 32
+      wool:
+        material: WOOL
+        amount: 16
+        durability: -1
+      iron:
+        material: IRON_INGOT
+        amount: 16
+    output:
+      saddle:
+        material: SADDLE
+        amount: 8
+  make_lead:
+    production_time: 4s
+    name: Make Leads
+    type: PRODUCTION
+    input:
+      string:
+        material: LEATHER
+        amount: 4
+    output:
+      leads:
+        material: LEASH
+        amount: 4
+  repair_textile_factory:
+    production_time: 4s
+    name: Repair Factory
+    type: REPAIR
+    input:
+      wool:
+        material: WOOL
+        amount: 32
+      leather:
+        material: LEATHER
+        amount: 8
+    health_gained: 10000
