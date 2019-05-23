@@ -1,23 +1,5 @@
 
 
-  downgrade_to_kiln:
-    production_time: 4s
-    name: Downgrade to a Kiln
-    type: UPGRADE
-    input:
-      stick:
-        material: STICK
-        amount: 320
-    factory: Kiln
-  downgrade_to_furnace:
-    production_time: 4s
-    name: Downgrade to a Furnace
-    type: UPGRADE
-    input:
-      stick:
-        material: STICK
-        amount: 320
-    factory: Furnace
   sinter_red_sandstone:
     production_time: 4s
     name: Sinter Sand Into Red Sandstone
